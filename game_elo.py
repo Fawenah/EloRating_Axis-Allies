@@ -282,17 +282,25 @@ def load_matches(path: str) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]
 def compute_elo(
     matches: List[Dict[str, Any]],
     cfg: EloConfig
-) -> Tuple[Dict[str, float], Dict[str, Dict[str, int]], Dict[str, Dict[str, int]], List[Dict[str, Any]]]:
+    ) -> Tuple[
+        Dict[str, float],
+        Dict[str, Dict[str, int]],
+        Dict[str, Dict[str, int]],
+        List[Dict[str, Any]],
+        Dict[str, List[Dict[str, Any]]],
+    ]:
     """
     Returns:
       - final ratings dict
       - per-player stats dict: {player: {"W": int, "L": int, "D": int, "GP": int}}
       - side stats dict: {"axis": {"W":..,"L":..,"D":..,"GP":..}, "allies": {...}}
       - per-match log entries
+      - per-player rating history for plotting
     """
     ratings: Dict[str, float] = {}
     stats: Dict[str, Dict[str, int]] = {}
     log: List[Dict[str, Any]] = []
+    rating_history: Dict[str, List[Dict[str, Any]]] = {}
 
     side_stats: Dict[str, Dict[str, int]] = {
         "axis": {"W": 0, "L": 0, "D": 0, "GP": 0},
@@ -305,6 +313,8 @@ def compute_elo(
                 ratings[p] = float(cfg.initial_rating)
             if p not in stats:
                 stats[p] = {"W": 0, "L": 0, "D": 0, "GP": 0}
+            if p not in rating_history:
+                rating_history[p] = []
 
     for m in matches:
         axis = m["axis"]
@@ -371,12 +381,52 @@ def compute_elo(
         else:
             raise ValueError(f"Unsupported distribution={cfg.distribution!r}")
 
-
+        involved = axis + allies
+        ratings_before_players = {p: ratings[p] for p in involved}
+        gp_before_players = {p: stats[p]["GP"] for p in involved}
 
         for p, d in deltas_axis.items():
             ratings[p] += d
         for p, d in deltas_allies.items():
             ratings[p] += d
+
+        # Record post-match rating snapshot for charting
+        match_date = m["date"].isoformat()
+        for p in set(axis + allies):
+            rating_history[p].append(
+                {"date": match_date, "rating": float(ratings[p])}
+            )
+
+        # Append per-player history for plotting
+        for p in axis:
+            rating_history.setdefault(p, []).append(
+                {
+                    "date": m["date"].isoformat(),
+                    "tournament": m.get("tournament", ""),
+                    "match_id": m["id"],
+                    "side": "axis",
+                    "result": m["result"],
+                    "gp_before": gp_before_players[p],
+                    "delta": deltas_axis[p],
+                    "rating_before": ratings_before_players[p],
+                    "rating_after": ratings[p],
+                }
+            )
+
+        for p in allies:
+            rating_history.setdefault(p, []).append(
+                {
+                    "date": m["date"].isoformat(),
+                    "tournament": m.get("tournament", ""),
+                    "match_id": m["id"],
+                    "side": "allies",
+                    "result": m["result"],
+                    "gp_before": gp_before_players[p],
+                    "delta": deltas_allies[p],
+                    "rating_before": ratings_before_players[p],
+                    "rating_after": ratings[p],
+                }
+            )
 
         # W/L/D is based on integer comparison (x vs y)
         side_stats["axis"]["GP"] += 1
@@ -445,7 +495,7 @@ def compute_elo(
             }
         )
 
-    return ratings, stats, side_stats, log
+    return ratings, stats, side_stats, log, rating_history
 
 
 def print_run_header(cfg: EloConfig, tournaments: List[Dict[str, Any]], match_count: int) -> None:
@@ -469,6 +519,70 @@ def print_run_header(cfg: EloConfig, tournaments: List[Dict[str, Any]], match_co
         print(f"  tournament_names:   {', '.join(tournament_names)}")
     print(f"  matches_processed:  {match_count}")
     print()
+
+
+# ----------------------------
+# Web JSON export
+# ----------------------------
+
+def build_web_payload(
+    cfg: EloConfig,
+    tournaments: List[Dict[str, Any]],
+    matches: List[Dict[str, Any]],
+    ratings: Dict[str, float],
+    stats: Dict[str, Dict[str, int]],
+    side_stats: Dict[str, Dict[str, int]],
+    log: List[Dict[str, Any]],
+    rating_history: Dict[str, List[Dict[str, Any]]],
+) -> Dict[str, Any]:
+    """
+    Create a stable, web-friendly JSON payload for GitHub Pages.
+
+    Notes:
+    - Keep full precision in JSON. Round in the UI.
+    - `rating_history` is per-player time series for plotting.
+    """
+    tournament_names = [t.get("name", "unknown") for t in tournaments]
+
+    players_sorted = sorted(
+        ratings.keys(),
+        key=lambda p: (-(ratings[p]), p),
+    )
+
+    return {
+        "meta": {
+            "schema_version": 1,
+            "generated_at": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
+            "tournaments": tournament_names,
+            "matches_processed": len(matches),
+        },
+        "config": {
+            "initial_rating": cfg.initial_rating,
+            "k_factor": cfg.k_factor,
+            "scale": cfg.scale,
+            "dynamic_k": cfg.dynamic_k,
+            "k_new_gp": cfg.k_new_gp,
+            "k_mid_gp": cfg.k_mid_gp,
+            "k_new_mult": cfg.k_new_mult,
+            "k_mid_mult": cfg.k_mid_mult,
+            "team_aggregation": cfg.team_aggregation,
+            "team_size_exponent": cfg.team_size_exponent,
+            "distribution": cfg.distribution,
+            "weighted_alpha": cfg.weighted_alpha if cfg.distribution == "weighted" else None,
+        },
+        "players": {
+            p: {
+                "rating": ratings[p],
+                "stats": stats[p],
+                "rating_history": rating_history.get(p, []),
+            }
+            for p in players_sorted
+        },
+        "side_stats": side_stats,
+        # Keep this if you want a match table / debugging in the UI:
+        "matches": log,
+    }
+
 
 
 # ----------------------------
@@ -496,6 +610,12 @@ def main() -> None:
     ap.add_argument("--k-mid-mult", type=float, default=1.25, help="K multiplier for players with GP < k-mid-gp (and >= k-new-gp)")
     ap.add_argument("--k-new-gp", type=int, default=2, help="GP threshold for new-player K multiplier")
     ap.add_argument("--k-mid-gp", type=int, default=4, help="GP threshold for mid-player K multiplier")
+    ap.add_argument(
+        "--web-out",
+        default="docs/data/elo.json",
+        help="Write web-friendly JSON (for GitHub Pages), default: docs/data/elo.json",
+    )
+
 
     args = ap.parse_args()
 
@@ -526,7 +646,7 @@ def main() -> None:
     )
 
     matches, tournaments = load_matches(args.yaml_path)
-    ratings, stats, side_stats, log = compute_elo(matches, cfg)
+    ratings, stats, side_stats, log, rating_history = compute_elo(matches, cfg)
 
     print_run_header(cfg, tournaments, len(matches))
 
@@ -545,6 +665,11 @@ def main() -> None:
         f"  Allies: GP:{side_stats['allies']['GP']:3d}  W:{side_stats['allies']['W']:3d}  "
         f"L:{side_stats['allies']['L']:3d}  D:{side_stats['allies']['D']:3d}"
     )
+
+    web_payload = build_web_payload(cfg, tournaments, matches, ratings, stats, side_stats, log, rating_history)
+    if args.web_out:
+        with open(args.web_out, "w", encoding="utf-8") as f:
+            json.dump(web_payload, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":

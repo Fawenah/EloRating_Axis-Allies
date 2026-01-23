@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Axis & Allies Elo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="container">
+    <h1>Axis & Allies Elo</h1>
+    <p id="generatedAt" class="muted"></p>
+  </header>
+
+  <main class="container grid">
+    <section class="card">
+      <h2>Leaderboard</h2>
+      <input id="playerSearch" class="input" placeholder="Search player..." />
+      <table id="leaderboard" class="table">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th class="num">Rating</th>
+            <th class="num">GP</th>
+            <th class="num">W</th>
+            <th class="num">L</th>
+            <th class="num">D</th>
+            <th class="num">Win%</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Side summary</h2>
+      <div id="sideSummary"></div>
+      <h3>Configuration</h3>
+      <pre id="configBox" class="pre"></pre>
+    </section>
+
+    <section class="card full">
+      <div class="row">
+        <h2>Player details</h2>
+        <select id="playerSelect" class="select"></select>
+      </div>
+
+      <canvas id="ratingChart" height="90"></canvas>
+
+      <div id="playerStats" class="stats"></div>
+
+      <h3>Recent matches</h3>
+      <div id="matchList" class="matchList"></div>
+    </section>
+  </main>
+
+  <footer class="container muted">
+    Hosted on GitHub Pages.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
