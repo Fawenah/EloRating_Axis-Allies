@@ -165,18 +165,46 @@ function renderMatchList(name) {
 function renderChart(name) {
   const p = (RUN.players || {})[name];
   const hist = p?.rating_history || [];
+  if (!hist.length) return;
 
-  // Convert mixed history entries into a clean series:
-  // - use "rating" if present (snapshots)
-  // - otherwise use "rating_after" (detailed match entries)
-  const points = hist
+  // If we have match events, use ONLY those (prevents duplicate points).
+  const hasMatchEvents = hist.some(h => h.match_id);
+  const rows = hasMatchEvents
+    ? hist.filter(h => h.match_id)
+    : hist;
+
+  // Build series
+  const points = rows
     .map(h => {
-      const y = (h.rating !== undefined) ? h.rating : h.rating_after;
+      const y =
+        hasMatchEvents
+          ? h.rating_after
+          : (h.rating !== undefined ? h.rating : h.rating_after);
+
       if (y === undefined || y === null) return null;
+
       const label = h.match_id ? `${h.date} • ${h.match_id}` : h.date;
-      return { x: label, y: Number(y) };
+      return { x: label, y: Number(y), match_id: h.match_id || null };
     })
     .filter(Boolean);
+
+  if (!points.length) return;
+
+  // Optional: de-dupe by match_id just in case
+  if (hasMatchEvents) {
+    const seen = new Set();
+    const deduped = [];
+    for (const pt of points) {
+      if (seen.has(pt.match_id)) continue;
+      seen.add(pt.match_id);
+      deduped.push(pt);
+    }
+    points.length = 0;
+    points.push(...deduped);
+  }
+
+  // Inject initial rating baseline
+  points.unshift({ x: "Start", y: 1500 });
 
   const labels = points.map(p => p.x);
   const data = points.map(p => p.y);
@@ -197,10 +225,12 @@ function renderChart(name) {
     options: {
       responsive: true,
       plugins: { legend: { display: true } },
-      scales: { y: { ticks: { callback: v => v } } }
+      scales: { y: { suggestedMin: 1400 } }
     }
   });
 }
+
+
 
 function selectPlayer(name) {
   document.getElementById("playerSelect").value = name;
