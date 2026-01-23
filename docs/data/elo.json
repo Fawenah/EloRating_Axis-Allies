@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": 1,
-    "generated_at": "2026-01-23T22:03:02Z",
+    "generated_at": "2026-01-23T22:26:24Z",
     "tournaments": [
       "19402edECRMod2025H2"
     ],
@@ -32,11 +32,11 @@
       },
       "rating_history": [
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "rating": 1516.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match1",
           "side": "allies",
@@ -47,11 +47,11 @@
           "rating_after": 1516.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "rating": 1532.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match3",
           "side": "allies",
@@ -73,11 +73,11 @@
       },
       "rating_history": [
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "rating": 1516.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match1",
           "side": "allies",
@@ -88,11 +88,11 @@
           "rating_after": 1516.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "rating": 1532.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match3",
           "side": "allies",
@@ -114,11 +114,11 @@
       },
       "rating_history": [
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "rating": 1484.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match2",
           "side": "axis",
@@ -129,11 +129,11 @@
           "rating_after": 1484.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "rating": 1500.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match4",
           "side": "axis",
@@ -155,11 +155,11 @@
       },
       "rating_history": [
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "rating": 1516.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match2",
           "side": "allies",
@@ -170,11 +170,11 @@
           "rating_after": 1516.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "rating": 1500.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match3",
           "side": "axis",
@@ -196,11 +196,11 @@
       },
       "rating_history": [
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "rating": 1484.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match2",
           "side": "axis",
@@ -211,11 +211,11 @@
           "rating_after": 1484.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "rating": 1500.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match4",
           "side": "axis",
@@ -237,11 +237,11 @@
       },
       "rating_history": [
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "rating": 1516.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match2",
           "side": "allies",
@@ -252,11 +252,11 @@
           "rating_after": 1516.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "rating": 1500.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match3",
           "side": "axis",
@@ -278,11 +278,11 @@
       },
       "rating_history": [
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "rating": 1484.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match1",
           "side": "axis",
@@ -293,11 +293,11 @@
           "rating_after": 1484.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "rating": 1468.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match4",
           "side": "allies",
@@ -319,11 +319,11 @@
       },
       "rating_history": [
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "rating": 1484.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match1",
           "side": "axis",
@@ -334,11 +334,11 @@
           "rating_after": 1484.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "rating": 1468.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match4",
           "side": "allies",
@@ -360,11 +360,11 @@
       },
       "rating_history": [
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "rating": 1484.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-26",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match1",
           "side": "axis",
@@ -375,11 +375,11 @@
           "rating_after": 1484.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "rating": 1468.0
         },
         {
-          "date": "2025-07-01",
+          "date": "2025-09-27",
           "tournament": "19402edECRMod2025H2",
           "match_id": "match4",
           "side": "allies",
@@ -409,7 +409,7 @@
   "matches": [
     {
       "id": "match1",
-      "date": "2025-07-01",
+      "date": "2025-09-26",
       "tournament": "19402edECRMod2025H2",
       "axis": [
         "andreas henriksson",
@@ -455,7 +455,7 @@
     },
     {
       "id": "match2",
-      "date": "2025-07-01",
+      "date": "2025-09-26",
       "tournament": "19402edECRMod2025H2",
       "axis": [
         "erik hardselius",
@@ -499,7 +499,7 @@
     },
     {
       "id": "match3",
-      "date": "2025-07-01",
+      "date": "2025-09-27",
       "tournament": "19402edECRMod2025H2",
       "axis": [
         "johan hellberg",
@@ -543,7 +543,7 @@
     },
     {
       "id": "match4",
-      "date": "2025-07-01",
+      "date": "2025-09-27",
       "tournament": "19402edECRMod2025H2",
       "axis": [
         "erik hardselius",

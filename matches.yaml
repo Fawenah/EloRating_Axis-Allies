@@ -1,21 +1,21 @@
 - tournament:
   - name: "19402edECRMod2025H2"
   - match1:
-    - 2025-7-01
+    - 2025-09-26
     - { axis: ["Andreas Henriksson", "Erik Frilund", "Pär Olsson"], allies: ["Anders Götsén", "Keyvan Edrisi"] }
     - "0:1"
 
   - match2:
-    - 2025-7-01
+    - 2025-09-26
     - { axis: ["Erik Hardselius", "Mika Sundberg"], allies: ["Johan Hellberg", "Sebastian Jönsson"] }
     - "0:1"
 
   - match3:
-    - 2025-7-01
+    - 2025-09-27
     - { axis: ["Johan Hellberg", "Sebastian Jönsson"], allies: ["Anders Götsén", "Keyvan Edrisi"] }
     - "0:1"
     
   - match4:
-    - 2025-7-01
+    - 2025-09-27
     - { axis: ["Erik Hardselius", "Mika Sundberg"], allies: ["Andreas Henriksson", "Erik Frilund", "Pär Olsson"] }
     - "1:0"
