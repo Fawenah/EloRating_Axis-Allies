@@ -1,0 +1,101 @@
+- tournament:
+  - name: "19402edECRMod2025H2"
+  - match1:
+    - 2025-7-01
+    - { axis: ["Andreas Henriksson", "Erik Frilund", "Pär Olsson"], allies: ["Anders Götsén", "Keyvan Edrisi"] }
+    - "0:1"
+  - match2:
+    - 2025-7-01
+    - { axis: ["Erik Hardselius", "Mika Sundberg"], allies: ["Johan Hellberg", "Sebastian Jönsson"] }
+    - "0:1"
+  - match3:
+    - 2025-7-01
+    - { axis: ["Johan Hellberg", "Sebastian Jönsson"], allies: ["Anders Götsén", "Keyvan Edrisi"] }
+    - "0:1"
+  - match4:
+    - 2025-7-01
+    - { axis: ["Erik Hardselius", "Mika Sundberg"], allies: ["Andreas Henriksson", "Erik Frilund", "Pär Olsson"] }
+    - "1:0"
+
+- tournament:
+  - name: "19402edECRMod2025H3"
+  - match1:
+    - 2025-7-08
+    - { axis: ["Anders Götsén", "Keyvan Edrisi"], allies: ["Erik Hardselius", "Mika Sundberg"] }
+    - "1:0"
+  - match2:
+    - 2025-7-08
+    - { axis: ["Johan Hellberg", "Sebastian Jönsson"], allies: ["Andreas Henriksson", "Erik Frilund", "Pär Olsson"] }
+    - "2:1"
+  - match3:
+    - 2025-7-08
+    - { axis: ["Erik Frilund", "Pär Olsson"], allies: ["Anders Götsén", "Keyvan Edrisi", "Mika Sundberg"] }
+    - "1:2"
+
+- tournament:
+  - name: "19402edECRMod2025H4"
+  - match1:
+    - 2025-7-15
+    - { axis: ["Erik Hardselius"], allies: ["Sebastian Jönsson"] }
+    - "1:1"
+  - match2:
+    - 2025-7-15
+    - { axis: ["Andreas Henriksson", "Pär Olsson"], allies: ["Johan Hellberg", "Mika Sundberg"] }
+    - "0:1"
+  - match3:
+    - 2025-7-15
+    - { axis: ["Erik Frilund", "Anders Götsén", "Keyvan Edrisi"], allies: ["Erik Hardselius", "Sebastian Jönsson"] }
+    - "1:0"
+  - match4:
+    - 2025-7-15
+    - { axis: ["Johan Hellberg", "Sebastian Jönsson"], allies: ["Andreas Henriksson", "Erik Frilund"] }
+    - "1:2"
+
+- tournament:
+  - name: "19402edECRMod2025H5"
+  - match1:
+    - 2025-7-22
+    - { axis: ["Andreas Henriksson", "Erik Hardselius"], allies: ["Anders Götsén", "Johan Hellberg"] }
+    - "2:0"
+  - match2:
+    - 2025-7-22
+    - { axis: ["Mika Sundberg", "Pär Olsson"], allies: ["Keyvan Edrisi", "Sebastian Jönsson"] }
+    - "0:2"
+  - match3:
+    - 2025-7-22
+    - { axis: ["Erik Frilund", "Sebastian Jönsson", "Johan Hellberg"], allies: ["Erik Hardselius", "Mika Sundberg"] }
+    - "2:2"
+
+- tournament:
+  - name: "19402edECRMod2025H6"
+  - match1:
+    - 2025-7-29
+    - { axis: ["Anders Götsén"], allies: ["Pär Olsson"] }
+    - "0:1"
+  - match2:
+    - 2025-7-29
+    - { axis: ["Keyvan Edrisi", "Mika Sundberg"], allies: ["Andreas Henriksson", "Erik Frilund"] }
+    - "1:0"
+  - match3:
+    - 2025-7-29
+    - { axis: ["Johan Hellberg", "Erik Hardselius"], allies: ["Sebastian Jönsson", "Anders Götsén"] }
+    - "1:2"
+
+- tournament:
+  - name: "19402edECRMod2025H7"
+  - match1:
+    - 2025-8-05
+    - { axis: ["Erik Frilund", "Pär Olsson", "Mika Sundberg"], allies: ["Anders Götsén", "Keyvan Edrisi"] }
+    - "1:0"
+  - match2:
+    - 2025-8-05
+    - { axis: ["Andreas Henriksson", "Sebastian Jönsson"], allies: ["Erik Hardselius", "Johan Hellberg"] }
+    - "0:1"
+  - match3:
+    - 2025-8-05
+    - { axis: ["Anders Götsén", "Johan Hellberg"], allies: ["Erik Frilund", "Mika Sundberg", "Pär Olsson"] }
+    - "1:2"
+  - match4:
+    - 2025-8-05
+    - { axis: ["Keyvan Edrisi", "Sebastian Jönsson"], allies: ["Andreas Henriksson", "Erik Hardselius"] }
+    - "2:1"
