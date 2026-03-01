@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Axis & Allies Unit Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="index.html">Elo</a>
+      <a href="units.html" class="active">Units</a>
+      <a href="research.html">Research</a>
+    </nav>
+    <h1>Axis & Allies Unit Dashboard</h1>
+    <p class="muted">Quick unit reference, expandable unit rules, and combat value board.</p>
+  </header>
+
+  <main class="container units-layout">
+    <section class="card units-full">
+      <h2>Quick Reference</h2>
+      <p class="muted">Bare-minimum stats for fast lookups during play.</p>
+      <div class="units-table-wrap">
+        <table id="unitQuickTable" class="table quick-table">
+          <thead>
+            <tr>
+              <th>Unit</th>
+              <th>Upgrade</th>
+              <th class="num">Cost</th>
+              <th class="num">Move</th>
+              <th class="num">Atk</th>
+              <th class="num">Def</th>
+              <th class="num">Cap</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card units-full">
+      <h2>Unit Cards</h2>
+      <p class="muted">Click a card to expand detailed rules and upgrade differences.</p>
+      <div id="unitCards" class="unit-cards"></div>
+    </section>
+
+    <section class="card units-full">
+      <h2>Combat Value Board</h2>
+      <p class="muted">Units grouped by hit value using the Unit Statistics attack/defend values.</p>
+      <div class="combat-board-wrap">
+        <div class="combat-board-layout">
+          <div class="combat-side-info">
+            <div class="combat-side-note">
+              <div class="combat-side-note-text">
+                <img class="side-note-unit-image" src="images/navalMine.png" alt="Naval Mine" />
+                <b>Naval Mine</b><br>
+                Roll 1 die per mine each time a ship moves into the mine's sea zone<br>
+                On a 1, the ship is damaged and the mine is removed
+              </div>
+            </div>
+            <div class="combat-side-note">
+              <div class="combat-side-note-text">
+                <b>Convoy Raid:</b><br>
+                Carriers cannot raid<br>
+                Submarines, Air Units roll 2 dice<br>
+                Other ships roll 1 die
+              </div>
+            </div>
+            <div class="combat-side-note">
+              <div class="combat-side-note-text">
+                <b>Bombing Raid:</b><br>
+                Bombers must assign targets<br>
+                Strategic Bombers get +2 dmg<br>
+                Tactical Bombers can only target naval/air bases
+              </div>
+            </div>
+            <div class="combat-side-note">
+              <div class="combat-side-note-text">
+                <b>Submarines: Surprise Strike or Submerge</b><br>
+                Surprise strike remove hit unit without moving to Casualties<br>
+                Submerge leaves the battle
+              </div>
+            </div>
+          </div>
+
+          <table id="combatBoard" class="combat-board-5x5">
+            <tbody>
+              <tr>
+                <td class="attacker-row" colspan="5">Attacker</td>
+              </tr>
+              <tr class="units-row">
+                <td data-side="attack" data-value="0"></td>
+                <td data-side="attack" data-value="1"></td>
+                <td data-side="attack" data-value="2"></td>
+                <td data-side="attack" data-value="3"></td>
+                <td data-side="attack" data-value="4"></td>
+              </tr>
+              <tr class="values-row">
+                <td><div class="value-title">0</div></td>
+                <td><div class="value-title">1</div></td>
+                <td><div class="value-title">2</div></td>
+                <td><div class="value-title">3</div></td>
+                <td><div class="value-title">4</div></td>
+              </tr>
+              <tr class="units-row">
+                <td data-side="defend" data-value="0"></td>
+                <td data-side="defend" data-value="1"></td>
+                <td data-side="defend" data-value="2"></td>
+                <td data-side="defend" data-value="3"></td>
+                <td data-side="defend" data-value="4"></td>
+              </tr>
+              <tr>
+                <td class="casualty-row defender-zone" colspan="5">
+                  <div class="defender-zone-inner">
+                    <span class="left">Casualty Zone</span>
+                    <span class="center">Defender</span>
+                    <span class="right">Casualty Zone</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container muted">
+    Built from UnitRules.md and ResearchUpgrades.md.
+  </footer>
+
+  <script src="units.js"></script>
+</body>
+</html>

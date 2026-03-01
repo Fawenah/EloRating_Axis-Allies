@@ -19,3 +19,25 @@
     - 2025-09-27
     - { axis: ["Erik Hardselius", "Mika Sundberg"], allies: ["Andreas Henriksson", "Erik Frilund", "Pär Olsson"] }
     - "1:0"
+
+- tournament:
+  - name: "19402edECRMod2026V1"
+  - match1:
+    - 2025-03-20
+    - { axis: ["Tomas Nilsson", "Niclas Gustafsson", "Sebastian Jönsson"], allies: ["Erik Frilund", "Keyvan Edrisi"] }
+    - "0:0"
+
+  - match2:
+    - 2025-03-20
+    - { axis: ["Anders Götsén", "Pär Olsson"], allies: ["Johan Hellberg", "Mika Sundberg"] }
+    - "0:0"
+
+  - match3:
+    - 2025-03-21
+    - { axis: ["Johan Hellberg", "Mika Sundberg"], allies: ["Tomas Nilsson", "Niclas Gustafsson", "Sebastian Jönsson"] }
+    - "0:0"
+    
+  - match4:
+    - 2025-03-21
+    - { axis: ["Erik Frilund", "Keyvan Edrisi"], allies: ["Anders Götsén", "Pär Olsson"] }
+    - "0:0"
