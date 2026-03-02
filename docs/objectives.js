@@ -61,7 +61,7 @@ const objectiveGroups = [
         id: "axis-major-china",
         title: "China",
         condition: "Major objective check",
-        requirement: "Control all 18 originally Chinese territories: Kansu, Tsinghai, Sikang, Kiangsu, Shantung, Hopei, Jehol, Kweichow, Hunan, Kiangsi, Yunnan, Anhwe, Chahar, Suiyuyan, Shensi, Szechwan, Kwangsi, Manchuria.",
+        requirement: "Control all 18 originally Chinese territories.",
         reward: "Counts as one Axis major objective.",
         parts: TERRITORIES.china18
       },
@@ -69,7 +69,7 @@ const objectiveGroups = [
         id: "axis-major-europe",
         title: "Europe",
         condition: "Major objective check",
-        requirement: "Control 7 victory cities on the Europe side of the map from this full list: Washington, Ottawa, Johannisburg, Cairo, London, Moscow, Leningrad, Stalingrad, Warsaw, Berlin, Rome, Paris.",
+        requirement: "Control 7 victory cities on the Europe side of the map.",
         reward: "Counts as one Axis major objective.",
         parts: TERRITORIES.axisEuropeCities12,
         rule: { type: "min", min: 7 }
@@ -78,7 +78,7 @@ const objectiveGroups = [
         id: "axis-major-pacific",
         title: "Pacific",
         condition: "Major objective check",
-        requirement: "Control all 8 originally American islands: Philippines, Guam, Wake Island, Johnston Island, Hawaiian Islands, Midway, Line Islands, Aleutian Islands.",
+        requirement: "Control all 8 originally American islands.",
         reward: "Counts as one Axis major objective.",
         parts: TERRITORIES.usIslands8
       },
@@ -86,7 +86,7 @@ const objectiveGroups = [
         id: "axis-major-africa",
         title: "Africa",
         condition: "Major objective check",
-        requirement: "Control Morocco, Algeria, Tunisia, Libya, Tobruk, Alexandria, Egypt.",
+        requirement: "Control key African territories.",
         reward: "Counts as one Axis major objective.",
         parts: ["Morocco", "Algeria", "Tunisia", "Libya", "Tobruk", "Alexandria", "Egypt"]
       },
@@ -94,7 +94,7 @@ const objectiveGroups = [
         id: "axis-major-asia",
         title: "Asia",
         condition: "Major objective check",
-        requirement: "Control Calcutta, Malaya, Hong Kong, Shanghai.",
+        requirement: "Control key Asian territories.",
         reward: "Counts as one Axis major objective.",
         parts: ["Calcutta", "Malaya", "Hong Kong", "Shanghai"]
       },
@@ -128,7 +128,7 @@ const objectiveGroups = [
         id: "allied-major-china",
         title: "China",
         condition: "Major objective check",
-        requirement: "Control all 18 originally Chinese territories: Kansu, Tsinghai, Sikang, Kiangsu, Shantung, Hopei, Jehol, Kweichow, Hunan, Kiangsi, Yunnan, Anhwe, Chahar, Suiyuyan, Shensi, Szechwan, Kwangsi, Manchuria.",
+        requirement: "Control all 18 originally Chinese territories.",
         reward: "Counts as one Allied major objective.",
         parts: TERRITORIES.china18
       },
@@ -137,7 +137,7 @@ const objectiveGroups = [
         id: "allied-major-pacific",
         title: "Pacific",
         condition: "Major objective check",
-        requirement: "Control all 8 originally Japanese islands: Okinawa, Iwo Jima, Marianas, Marshall Islands, Caroline Islands, Paulau Island, Hainan, Formosa.",
+        requirement: "Control all 8 originally Japanese islands.",
         reward: "Counts as one Allied major objective.",
         parts: TERRITORIES.japanIslands8
       },
@@ -145,7 +145,7 @@ const objectiveGroups = [
         id: "allied-major-africa",
         title: "Africa",
         condition: "Major objective check",
-        requirement: "Control all non-neutral territories on the African continent: Morocco, Algeria, Tunisia, Libya, Tobruk, Alexandria, Egypt, French West Aftica, Gold Coast, French Central Africa, Nigeria, French Equatorial Africa, Anglo-Egyptian Sudan, Ethiopia, British Somaliland, Italian Somaliland, Kenya, Belgian Congo, Tanganyika Territory, Rhodesia, South West Africa, Union of South Africa, French Madagascar.",
+        requirement: "Control all non-neutral territories on the African continent.",
         reward: "Counts as one Allied major objective.",
         parts: TERRITORIES.africaNonNeutralAllied
       },
@@ -169,7 +169,7 @@ const objectiveGroups = [
         id: "allied-major-diplomacy",
         title: "Diplomacy",
         condition: "Major objective check",
-        requirement: "Control all 8 original pro-Allied neutral territories: Eire, Yugoslavia, Greece, Crete, NW Persia, Persia, E Persia, Brazil.",
+        requirement: "Control all 8 original pro-Allied neutral territories.",
         reward: "Counts as one Allied major objective.",
         parts: TERRITORIES.proAlliedNeutral8
       },
@@ -202,7 +202,7 @@ const objectiveGroups = [
         id: "de-cities",
         title: "Key Soviet Cities",
         condition: "Germany is at war with the Soviet Union",
-        requirement: "Germany controls each listed territory: Novgorod (Leningrad), Volgograd (Stalingrad), Russia (Moscow).",
+        requirement: "Germany controls key Soviet cities.",
         reward: "+5 IPCs for each listed territory controlled.",
         parts: ["Novgorod (Leningrad)", "Volgograd (Stalingrad)", "Russia (Moscow)"]
       },
@@ -234,7 +234,7 @@ const objectiveGroups = [
         id: "de-me",
         title: "Middle East Territories",
         condition: "Germany is at war with the United Kingdom and France",
-        requirement: "Germany controls each listed territory: Iraq, Persia, Northwest Persia.",
+        requirement: "Germany controls key Middle East territories.",
         reward: "+2 IPCs for each listed territory controlled.",
         parts: ["Iraq", "Persia", "Northwest Persia"]
       },
@@ -260,7 +260,7 @@ const objectiveGroups = [
         id: "jp-china-once",
         title: "Full China Control (One-Time)",
         condition: "Japan is at war",
-        requirement: "Axis powers control all originally Chinese territories: Kansu, Tsinghai, Sikang, Kiangsu, Shantung, Hopei, Jehol, Kweichow, Hunan, Kiangsi, Yunnan, Anhwe, Chahar, Suiyuyan, Shensi, Szechwan, Kwangsi, Manchuria.",
+        requirement: "Axis powers control all originally Chinese territories.",
         reward: "+10 IPCs (one time only).",
         parts: TERRITORIES.china18
       },
@@ -268,7 +268,7 @@ const objectiveGroups = [
         id: "jp-pacific-income",
         title: "Pacific Island Control Income",
         condition: "Japan is at war",
-        requirement: "Axis powers control each listed island: Guam, Midway, Wake Island, Gilbert Islands, Solomon Islands, Fiji, Philippines, Johnston Island, Line Islands, Hawaiian Islands.",
+        requirement: "Axis powers control key Pacific island territories.",
         reward: "+3 IPCs for each listed island controlled.",
         parts: TERRITORIES.japanPacificIncome10
       },
@@ -277,7 +277,7 @@ const objectiveGroups = [
         id: "jp-central-pacific",
         title: "Central Pacific Chain",
         condition: "Japan is at war",
-        requirement: "Axis powers control all of: Guam, Midway, Wake Island, Gilbert Islands, Solomon Islands.",
+        requirement: "Axis powers control key Central Pacific territories.",
         reward: "+5 IPCs.",
         parts: ["Guam", "Midway", "Wake Island", "Gilbert Islands", "Solomon Islands"]
       },
@@ -285,7 +285,7 @@ const objectiveGroups = [
         id: "jp-key-capitals",
         title: "Key Capital Territories",
         condition: "Japan is at war",
-        requirement: "Axis powers control each listed territory: India (Calcutta), New South Wales (Sydney), Hawaiian Islands (Honolulu), Western United States (San Francisco).",
+        requirement: "Axis powers control key city territories.",
         reward: "+5 IPCs for each listed territory controlled.",
         parts: ["India (Calcutta)", "New South Wales (Sydney)", "Hawaiian Islands (Honolulu)", "Western United States (San Francisco)"]
       },
@@ -293,7 +293,7 @@ const objectiveGroups = [
         id: "jp-dei",
         title: "Dutch East Indies Block",
         condition: "Japan is at war",
-        requirement: "Axis powers control all of: Sumatra, Java, Borneo, Celebes.",
+        requirement: "Axis powers control key Dutch East Indies territories.",
         reward: "+5 IPCs.",
         parts: ["Sumatra", "Java", "Borneo", "Celebes"]
       }
@@ -318,7 +318,7 @@ const objectiveGroups = [
         id: "it-3of4",
         title: "Strategic 3-of-4",
         condition: "Italy is at war",
-        requirement: "Axis powers control at least 3 from this full list: Gibraltar, Southern France, Greece, Egypt.",
+        requirement: "Axis powers control at least 3 territories from the Greater Roman Empire.",
         reward: "+5 IPCs.",
         parts: ["Gibraltar", "Southern France", "Greece", "Egypt"],
         rule: { type: "min", min: 3 }
@@ -327,7 +327,7 @@ const objectiveGroups = [
         id: "it-na",
         title: "North Africa Coastal Chain",
         condition: "Italy is at war",
-        requirement: "Axis powers control all of: Morocco, Algeria, Tunisia, Libya, Tobruk, Alexandria.",
+        requirement: "Axis powers control key North Africa territories.",
         reward: "+5 IPCs.",
         parts: ["Morocco", "Algeria", "Tunisia", "Libya", "Tobruk", "Alexandria"]
       },
@@ -335,7 +335,7 @@ const objectiveGroups = [
         id: "it-me",
         title: "Middle East Territories",
         condition: "Italy is at war",
-        requirement: "Italy controls each listed territory: Iraq, Persia, Northwest Persia.",
+        requirement: "Italy controls key Middle East territories.",
         reward: "+2 IPCs for each listed territory controlled.",
         parts: ["Iraq", "Persia", "Northwest Persia"]
       },
@@ -343,7 +343,7 @@ const objectiveGroups = [
         id: "it-isola",
         title: "Mare Nostrum Isola",
         condition: "Italy is at war",
-        requirement: "Axis powers control Cyprus, Crete, Malta, Sardinia, Sicily.",
+        requirement: "Axis powers control key Mediterranean islands.",
         reward: "+5 IPCs.",
         parts: ["Cyprus", "Crete", "Malta", "Sardinia", "Sicily"]
       },
@@ -351,7 +351,7 @@ const objectiveGroups = [
         id: "it-east-africa",
         title: "East Africa Chain",
         condition: "Italy is at war",
-        requirement: "Axis powers control British Somaliland, Italian Somaliland, Ethopia, Anglo-Egyptian Sudan, Kenya.",
+        requirement: "Axis powers control key East Africa territories.",
         reward: "+5 IPCs.",
         parts: ["British Somaliland", "Italian Somaliland", "Ethopia", "Anglo-Egyptian Sudan", "Kenya"]
       }
@@ -376,7 +376,7 @@ const objectiveGroups = [
         id: "su-3of4",
         title: "Eastern Europe Control Block",
         condition: "Soviet Union is at war on the European side",
-        requirement: "Soviet Union controls 3 out of 4 from this full list: Finland, Poland, Slovakia/Hungary, Romania.",
+        requirement: "Soviet Union controls 3 out of 4 key Eastern European territories.",
         reward: "+10 IPCs.",
         parts: ["Finland", "Poland", "Slovakia/Hungary", "Romania"],
         rule: { type: "min", min: 3 }
@@ -434,7 +434,7 @@ const objectiveGroups = [
         id: "us-npac",
         title: "North Pacific Perimeter",
         condition: "United States is at war",
-        requirement: "United States controls all of: Alaska, Aleutian Islands, Hawaiian Islands, Johnston Island, Line Islands.",
+        requirement: "United States controls key North Pacific territories.",
         reward: "+5 IPCs.",
         parts: ["Alaska", "Aleutian Islands", "Hawaiian Islands", "Johnston Island", "Line Islands"]
       },
@@ -442,7 +442,7 @@ const objectiveGroups = [
         id: "us-caribbean",
         title: "Caribbean Corridor",
         condition: "United States is at war",
-        requirement: "United States controls all of: South Eastern Mexico, Central America, West Indies.",
+        requirement: "United States controls key Caribbean territories.",
         reward: "+5 IPCs.",
         parts: ["South Eastern Mexico", "Central America", "West Indies"]
       },
@@ -450,7 +450,7 @@ const objectiveGroups = [
         id: "us-philippines",
         title: "Philippines",
         condition: "United States is at war",
-        requirement: "United States controls Philippines.",
+        requirement: "United States controls key Philippine territories.",
         reward: "+5 IPCs.",
         parts: ["Philippines"]
       }
@@ -467,7 +467,7 @@ const objectiveGroups = [
         id: "cn-burma-road",
         title: "Burma Road Open",
         condition: "China is at war",
-        requirement: "Allies control India, Burma, and Yunnan (Burma Road totally open).",
+        requirement: "Allies control key Burma Road territories.",
         reward: "+6 IPCs.",
         parts: ["India", "Burma", "Yunnan"]
       }
@@ -484,11 +484,19 @@ const objectiveGroups = [
         id: "uke-colonies",
         title: "British Colonies",
         condition: "UK Europe objective check",
-        requirement: "UK Europe controls all its original territories within Africa. Required territories include Egypt, Anglo-Egyptian Sudan, Union of South Africa, and all other original UK territories in Africa.",
+        requirement: "UK Europe controls key African territories.",
         reward: "+5 IPCs.",
         parts: [
-          "All original UK Europe territories in Africa are controlled",
+          "Gold Coast",
+          "Nigeria",
+          "Belgian Congo",
+          "Alexandria",
           "Egypt",
+          "Kenya",
+          "Tanganyika Territory",
+          "Rhodesia",
+          "South West Africa",
+          "British Somaliland",
           "Anglo-Egyptian Sudan",
           "Union of South Africa"
         ]
@@ -497,10 +505,9 @@ const objectiveGroups = [
         id: "uke-commonwealth",
         title: "British Commonwealth",
         condition: "UK Europe objective check",
-        requirement: "UK Europe controls all its original territories outside Africa. Required territories include UK itself, Scotland, Iceland, Gibraltar, Malta, and Canadian territories (Ontario, Quebec, New Brunswick/Nova Scotia).",
+        requirement: "UK Europe controls key Commonwealth territories outside Africa.",
         reward: "+5 IPCs.",
         parts: [
-          "All original UK Europe territories outside Africa are controlled",
           "United Kingdom", "Scotland", "Iceland", "Gibraltar", "Malta",
           "Ontario", "Quebec", "New Brunswick/Nova Scotia"
         ]
@@ -517,7 +524,7 @@ const objectiveGroups = [
         id: "uke-euro",
         title: "European Theater",
         condition: "UK Europe objective check",
-        requirement: "At least 1 UK Europe land unit is on an originally controlled French territory in Europe. Listed territories: France, Normandy-Bordeaux, Southern France.",
+        requirement: "At least 1 UK Europe land unit is on an originally controlled French territory in Europe.",
         reward: "+5 IPCs.",
         parts: ["France", "Normandy-Bordeaux", "Southern France"],
         rule: { type: "min", min: 1 }
@@ -559,7 +566,7 @@ const objectiveGroups = [
         id: "ukp-outer",
         title: "Outer Perimeter",
         condition: "UK Pacific is at war with Japan",
-        requirement: "United Kingdom Pacific has at least 1 land unit on Sumatra, Java, Celebes, and/or Dutch New Guinea.",
+        requirement: "United Kingdom Pacific has at least 1 land unit on key Outer Perimeter territories.",
         reward: "+5 IPCs.",
         parts: ["Sumatra", "Java", "Celebes", "Dutch New Guinea"],
         rule: { type: "min", min: 1 }
