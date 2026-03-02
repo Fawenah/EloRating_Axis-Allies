@@ -101,6 +101,19 @@ body {
 .match .top { display: flex; justify-content: space-between; gap: 12px; }
 .match .small { color: var(--muted); font-size: 12px; margin-top: 4px; }
 
+.button {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #0f1317;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: var(--accent);
+}
+
 @media (max-width: 900px) {
   .grid { grid-template-columns: 1fr; }
 }
@@ -109,6 +122,226 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
+}
+
+.objectives-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.objectives-full {
+  width: 100%;
+}
+
+.objectives-toolbar {
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.objectives-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.objective-overview-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  background: #0f1317;
+}
+
+.objective-overview-card h3 {
+  margin: 0 0 8px;
+}
+
+.objective-overview-stats {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.objective-overview-subtitle {
+  margin: 12px 0 8px;
+  font-size: 14px;
+}
+
+.objective-overview-nations {
+  display: grid;
+  gap: 6px;
+}
+
+.objective-overview-nation {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+  padding: 8px;
+  display: grid;
+  gap: 4px;
+}
+
+.objective-overview-nation-name {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.objective-overview-nation-reward {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.objective-flat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 12px;
+}
+
+.objective-group-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  padding: 10px;
+}
+
+.objective-group-header h3 {
+  margin: 0 0 4px;
+}
+
+.objective-group-header p {
+  margin: 0;
+}
+
+.objective-group-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.objective-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #0f1317;
+  padding: 10px;
+}
+
+.objective-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.objective-item-title {
+  margin: 0;
+}
+
+.objective-header-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.objective-summary-chip {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: var(--muted);
+  background: var(--card);
+}
+
+.objective-item-meta {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.objective-item-meta p {
+  margin: 0;
+}
+
+.objective-progress {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.objective-parts {
+  margin-top: 10px;
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.objective-checklist {
+  margin-top: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+  padding: 6px 8px 8px;
+}
+
+.objective-checklist-summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.objective-checklist-summary::-webkit-details-marker {
+  display: none;
+}
+
+.objective-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 10px;
+  background: #0f1317;
+  font-size: 13px;
+  min-width: 0;
+}
+
+.objective-checkbox input {
+  margin: 0;
+}
+
+.objective-footer {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.objective-status-chip {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: var(--muted);
+  background: #0f1317;
+}
+
+@media (max-width: 1100px) {
+  .objective-flat-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .objective-parts {
+    grid-template-columns: 1fr;
+  }
 }
 
 .units-full {

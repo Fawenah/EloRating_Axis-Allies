@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Axis & Allies Objectives Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="index.html">Elo</a>
+      <a href="units.html">Units</a>
+      <a href="objectives.html" class="active">Objectives</a>
+      <a href="research.html">Research</a>
+    </nav>
+    <h1>Axis & Allies Objectives Dashboard</h1>
+    <p class="muted">Track current objective status and whether each objective has been scored.</p>
+  </header>
+
+  <main class="container objectives-layout">
+    <section class="card objectives-full">
+      <div class="row objectives-toolbar">
+        <div>
+          <h2>Overview</h2>
+          <p class="muted">Team totals update automatically from checklist progress and scoring state.</p>
+        </div>
+        <button id="resetObjectives" class="button" type="button">Reset all tracking</button>
+      </div>
+      <div id="teamOverview" class="objectives-overview"></div>
+    </section>
+
+    <section class="card objectives-full" aria-label="Major objective groups">
+      <h2>Major Objectives</h2>
+      <div id="majorObjectivesGrid" class="objective-flat-grid"></div>
+    </section>
+
+    <section class="card objectives-full" aria-label="National objective groups">
+      <h2>National Objectives</h2>
+      <div id="nationalObjectivesGrid" class="objective-flat-grid"></div>
+    </section>
+  </main>
+
+  <footer class="container muted">
+    Baseline built from rawtext/VictoryObjectives.md.
+  </footer>
+
+  <script src="objectives.js"></script>
+</body>
+</html>
