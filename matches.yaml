@@ -23,21 +23,21 @@
 - tournament:
   - name: "19402edECRMod2026V1"
   - match1:
-    - 2025-03-20
+    - 2026-03-20
     - { axis: ["Tomas Nilsson", "Niclas Gustafsson", "Sebastian Jönsson"], allies: ["Erik Frilund", "Keyvan Edrisi"] }
     - "3:2"
 
   - match2:
-    - 2025-03-20
+    - 2026-03-20
     - { axis: ["Anders Götsén", "Pär Olsson"], allies: ["Johan Hellberg", "Mika Sundberg"] }
     - "3:2"
 
   - match3:
-    - 2025-03-21
+    - 2026-03-21
     - { axis: ["Tomas Nilsson", "Niclas Gustafsson", "Sebastian Jönsson"], allies: ["Anders Götsén", "Pär Olsson"] }
     - "1:2"
     
   - match4:
-    - 2025-03-21
+    - 2026-03-21
     - { axis: ["Erik Frilund", "Keyvan Edrisi"], allies: ["Johan Hellberg", "Mika Sundberg"] }
     - "0:1"
