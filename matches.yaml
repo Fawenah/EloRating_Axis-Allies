@@ -39,5 +39,5 @@
     
   - match4:
     - 2025-03-21
-    - { axis: ["Johan Hellberg", "Mika Sundberg"], allies: ["Erik Frilund", "Keyvan Edrisi"] }
-    - "1:3"
+    - { axis: ["Erik Frilund", "Keyvan Edrisi"], allies: ["Johan Hellberg", "Mika Sundberg"] }
+    - "0:1"
