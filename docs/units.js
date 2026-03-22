@@ -300,6 +300,7 @@ const combatBoard = {
     3: [
       { label: "Tank / Heavy Tank", image: "images/tank.png" },
       { label: "Super Submarine", image: "images/superSubmarine.png" },
+      { label: "Fighter", image: "images/fighter.png" },
       { label: "Tactical Bomber", image: "images/tacticalBomber.png" },
       { label: "Cruiser", image: "images/cruiser.png" }
     ],
