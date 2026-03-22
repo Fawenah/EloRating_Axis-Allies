@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": 1,
-    "generated_at": "2026-03-22T20:48:19Z",
+    "generated_at": "2026-03-22T20:58:46Z",
     "tournaments": [
       "19402edECRMod2025H2",
       "19402edECRMod2026V1"
@@ -24,7 +24,7 @@
   },
   "players": {
     "anders götsén": {
-      "rating": 1541.1047595347577,
+      "rating": 1540.5333333333333,
       "stats": {
         "W": 4,
         "L": 0,
@@ -33,140 +33,69 @@
       },
       "rating_history": [
         {
-          "date": "2025-03-20",
-          "rating": 1503.2
+          "date": "2025-09-26",
+          "rating": 1516.0
         },
         {
-          "date": "2025-03-20",
+          "date": "2025-09-26",
+          "tournament": "19402edECRMod2025H2",
+          "match_id": "match1",
+          "side": "allies",
+          "result": "0:1",
+          "gp_before": 0,
+          "delta": 16.0,
+          "rating_before": 1500.0,
+          "rating_after": 1516.0
+        },
+        {
+          "date": "2025-09-27",
+          "rating": 1532.0
+        },
+        {
+          "date": "2025-09-27",
+          "tournament": "19402edECRMod2025H2",
+          "match_id": "match3",
+          "side": "allies",
+          "result": "0:1",
+          "gp_before": 1,
+          "delta": 16.0,
+          "rating_before": 1516.0,
+          "rating_after": 1532.0
+        },
+        {
+          "date": "2026-03-20",
+          "rating": 1535.2
+        },
+        {
+          "date": "2026-03-20",
           "tournament": "19402edECRMod2026V1",
           "match_id": "match2",
           "side": "axis",
           "result": "3:2",
-          "gp_before": 0,
+          "gp_before": 2,
           "delta": 3.1999999999999993,
-          "rating_before": 1500.0,
-          "rating_after": 1503.2
+          "rating_before": 1532.0,
+          "rating_after": 1535.2
         },
         {
-          "date": "2025-03-21",
-          "rating": 1508.5333333333333
+          "date": "2026-03-21",
+          "rating": 1540.5333333333333
         },
         {
-          "date": "2025-03-21",
+          "date": "2026-03-21",
           "tournament": "19402edECRMod2026V1",
           "match_id": "match3",
           "side": "allies",
           "result": "1:2",
-          "gp_before": 1,
+          "gp_before": 3,
           "delta": 5.333333333333332,
-          "rating_before": 1503.2,
-          "rating_after": 1508.5333333333333
-        },
-        {
-          "date": "2025-09-26",
-          "rating": 1524.6152023110262
-        },
-        {
-          "date": "2025-09-26",
-          "tournament": "19402edECRMod2025H2",
-          "match_id": "match1",
-          "side": "allies",
-          "result": "0:1",
-          "gp_before": 2,
-          "delta": 16.081868977692938,
-          "rating_before": 1508.5333333333333,
-          "rating_after": 1524.6152023110262
-        },
-        {
-          "date": "2025-09-27",
-          "rating": 1541.1047595347577
-        },
-        {
-          "date": "2025-09-27",
-          "tournament": "19402edECRMod2025H2",
-          "match_id": "match3",
-          "side": "allies",
-          "result": "0:1",
-          "gp_before": 3,
-          "delta": 16.489557223731502,
-          "rating_before": 1524.6152023110262,
-          "rating_after": 1541.1047595347577
-        }
-      ]
-    },
-    "keyvan edrisi": {
-      "rating": 1513.3714262014244,
-      "stats": {
-        "W": 2,
-        "L": 2,
-        "D": 0,
-        "GP": 4
-      },
-      "rating_history": [
-        {
-          "date": "2025-03-20",
-          "rating": 1496.8
-        },
-        {
-          "date": "2025-03-20",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match1",
-          "side": "allies",
-          "result": "3:2",
-          "gp_before": 0,
-          "delta": -3.1999999999999993,
-          "rating_before": 1500.0,
-          "rating_after": 1496.8
-        },
-        {
-          "date": "2025-03-21",
-          "rating": 1480.8
-        },
-        {
-          "date": "2025-03-21",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match4",
-          "side": "axis",
-          "result": "0:1",
-          "gp_before": 1,
-          "delta": -16.0,
-          "rating_before": 1496.8,
-          "rating_after": 1480.8
-        },
-        {
-          "date": "2025-09-26",
-          "rating": 1496.8818689776929
-        },
-        {
-          "date": "2025-09-26",
-          "tournament": "19402edECRMod2025H2",
-          "match_id": "match1",
-          "side": "allies",
-          "result": "0:1",
-          "gp_before": 2,
-          "delta": 16.081868977692928,
-          "rating_before": 1480.8,
-          "rating_after": 1496.8818689776929
-        },
-        {
-          "date": "2025-09-27",
-          "rating": 1513.3714262014244
-        },
-        {
-          "date": "2025-09-27",
-          "tournament": "19402edECRMod2025H2",
-          "match_id": "match3",
-          "side": "allies",
-          "result": "0:1",
-          "gp_before": 3,
-          "delta": 16.48955722373149,
-          "rating_before": 1496.8818689776929,
-          "rating_after": 1513.3714262014244
+          "rating_before": 1535.2,
+          "rating_after": 1540.5333333333333
         }
       ]
     },
     "johan hellberg": {
-      "rating": 1512.3595644372522,
+      "rating": 1512.8,
       "stats": {
         "W": 2,
         "L": 2,
@@ -175,38 +104,8 @@
       },
       "rating_history": [
         {
-          "date": "2025-03-20",
-          "rating": 1496.8
-        },
-        {
-          "date": "2025-03-20",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match2",
-          "side": "allies",
-          "result": "3:2",
-          "gp_before": 0,
-          "delta": -3.1999999999999993,
-          "rating_before": 1500.0,
-          "rating_after": 1496.8
-        },
-        {
-          "date": "2025-03-21",
-          "rating": 1512.8
-        },
-        {
-          "date": "2025-03-21",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match4",
-          "side": "allies",
-          "result": "0:1",
-          "gp_before": 1,
-          "delta": 16.0,
-          "rating_before": 1496.8,
-          "rating_after": 1512.8
-        },
-        {
           "date": "2025-09-26",
-          "rating": 1528.8491216609837
+          "rating": 1516.0
         },
         {
           "date": "2025-09-26",
@@ -214,14 +113,14 @@
           "match_id": "match2",
           "side": "allies",
           "result": "0:1",
-          "gp_before": 2,
-          "delta": 16.04912166098364,
-          "rating_before": 1512.8,
-          "rating_after": 1528.8491216609837
+          "gp_before": 0,
+          "delta": 16.0,
+          "rating_before": 1500.0,
+          "rating_after": 1516.0
         },
         {
           "date": "2025-09-27",
-          "rating": 1512.3595644372522
+          "rating": 1500.0
         },
         {
           "date": "2025-09-27",
@@ -229,15 +128,45 @@
           "match_id": "match3",
           "side": "axis",
           "result": "0:1",
+          "gp_before": 1,
+          "delta": -16.0,
+          "rating_before": 1516.0,
+          "rating_after": 1500.0
+        },
+        {
+          "date": "2026-03-20",
+          "rating": 1496.8
+        },
+        {
+          "date": "2026-03-20",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match2",
+          "side": "allies",
+          "result": "3:2",
+          "gp_before": 2,
+          "delta": -3.1999999999999993,
+          "rating_before": 1500.0,
+          "rating_after": 1496.8
+        },
+        {
+          "date": "2026-03-21",
+          "rating": 1512.8
+        },
+        {
+          "date": "2026-03-21",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match4",
+          "side": "allies",
+          "result": "0:1",
           "gp_before": 3,
-          "delta": -16.489557223731506,
-          "rating_before": 1528.8491216609837,
-          "rating_after": 1512.3595644372522
+          "delta": 16.0,
+          "rating_before": 1496.8,
+          "rating_after": 1512.8
         }
       ]
     },
-    "mika sundberg": {
-      "rating": 1512.291026672863,
+    "keyvan edrisi": {
+      "rating": 1512.8,
       "stats": {
         "W": 2,
         "L": 2,
@@ -246,38 +175,79 @@
       },
       "rating_history": [
         {
-          "date": "2025-03-20",
-          "rating": 1496.8
+          "date": "2025-09-26",
+          "rating": 1516.0
         },
         {
-          "date": "2025-03-20",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match2",
+          "date": "2025-09-26",
+          "tournament": "19402edECRMod2025H2",
+          "match_id": "match1",
           "side": "allies",
-          "result": "3:2",
+          "result": "0:1",
           "gp_before": 0,
-          "delta": -3.1999999999999993,
+          "delta": 16.0,
           "rating_before": 1500.0,
-          "rating_after": 1496.8
+          "rating_after": 1516.0
         },
         {
-          "date": "2025-03-21",
-          "rating": 1512.8
+          "date": "2025-09-27",
+          "rating": 1532.0
         },
         {
-          "date": "2025-03-21",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match4",
+          "date": "2025-09-27",
+          "tournament": "19402edECRMod2025H2",
+          "match_id": "match3",
           "side": "allies",
           "result": "0:1",
           "gp_before": 1,
           "delta": 16.0,
-          "rating_before": 1496.8,
-          "rating_after": 1512.8
+          "rating_before": 1516.0,
+          "rating_after": 1532.0
         },
         {
+          "date": "2026-03-20",
+          "rating": 1528.8
+        },
+        {
+          "date": "2026-03-20",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match1",
+          "side": "allies",
+          "result": "3:2",
+          "gp_before": 2,
+          "delta": -3.1999999999999993,
+          "rating_before": 1532.0,
+          "rating_after": 1528.8
+        },
+        {
+          "date": "2026-03-21",
+          "rating": 1512.8
+        },
+        {
+          "date": "2026-03-21",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match4",
+          "side": "axis",
+          "result": "0:1",
+          "gp_before": 3,
+          "delta": -16.0,
+          "rating_before": 1528.8,
+          "rating_after": 1512.8
+        }
+      ]
+    },
+    "mika sundberg": {
+      "rating": 1512.8,
+      "stats": {
+        "W": 2,
+        "L": 2,
+        "D": 0,
+        "GP": 4
+      },
+      "rating_history": [
+        {
           "date": "2025-09-26",
-          "rating": 1496.7508783390163
+          "rating": 1484.0
         },
         {
           "date": "2025-09-26",
@@ -285,14 +255,14 @@
           "match_id": "match2",
           "side": "axis",
           "result": "0:1",
-          "gp_before": 2,
-          "delta": -16.049121660983637,
-          "rating_before": 1512.8,
-          "rating_after": 1496.7508783390163
+          "gp_before": 0,
+          "delta": -16.0,
+          "rating_before": 1500.0,
+          "rating_after": 1484.0
         },
         {
           "date": "2025-09-27",
-          "rating": 1512.291026672863
+          "rating": 1500.0
         },
         {
           "date": "2025-09-27",
@@ -300,15 +270,45 @@
           "match_id": "match4",
           "side": "axis",
           "result": "1:0",
+          "gp_before": 1,
+          "delta": 16.0,
+          "rating_before": 1484.0,
+          "rating_after": 1500.0
+        },
+        {
+          "date": "2026-03-20",
+          "rating": 1496.8
+        },
+        {
+          "date": "2026-03-20",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match2",
+          "side": "allies",
+          "result": "3:2",
+          "gp_before": 2,
+          "delta": -3.1999999999999993,
+          "rating_before": 1500.0,
+          "rating_after": 1496.8
+        },
+        {
+          "date": "2026-03-21",
+          "rating": 1512.8
+        },
+        {
+          "date": "2026-03-21",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match4",
+          "side": "allies",
+          "result": "0:1",
           "gp_before": 3,
-          "delta": 15.540148333846641,
-          "rating_before": 1496.7508783390163,
-          "rating_after": 1512.291026672863
+          "delta": 16.0,
+          "rating_before": 1496.8,
+          "rating_after": 1512.8
         }
       ]
     },
     "erik hardselius": {
-      "rating": 1499.491026672863,
+      "rating": 1500.0,
       "stats": {
         "W": 1,
         "L": 1,
@@ -318,7 +318,7 @@
       "rating_history": [
         {
           "date": "2025-09-26",
-          "rating": 1483.9508783390163
+          "rating": 1484.0
         },
         {
           "date": "2025-09-26",
@@ -327,13 +327,13 @@
           "side": "axis",
           "result": "0:1",
           "gp_before": 0,
-          "delta": -16.049121660983648,
+          "delta": -16.0,
           "rating_before": 1500.0,
-          "rating_after": 1483.9508783390163
+          "rating_after": 1484.0
         },
         {
           "date": "2025-09-27",
-          "rating": 1499.491026672863
+          "rating": 1500.0
         },
         {
           "date": "2025-09-27",
@@ -342,9 +342,9 @@
           "side": "axis",
           "result": "1:0",
           "gp_before": 1,
-          "delta": 15.54014833384663,
-          "rating_before": 1483.9508783390163,
-          "rating_after": 1499.491026672863
+          "delta": 16.0,
+          "rating_before": 1484.0,
+          "rating_after": 1500.0
         }
       ]
     },
@@ -358,11 +358,11 @@
       },
       "rating_history": [
         {
-          "date": "2025-03-20",
+          "date": "2026-03-20",
           "rating": 1503.2
         },
         {
-          "date": "2025-03-20",
+          "date": "2026-03-20",
           "tournament": "19402edECRMod2026V1",
           "match_id": "match1",
           "side": "axis",
@@ -373,16 +373,87 @@
           "rating_after": 1503.2
         },
         {
-          "date": "2025-03-21",
+          "date": "2026-03-21",
           "rating": 1497.8666666666668
         },
         {
-          "date": "2025-03-21",
+          "date": "2026-03-21",
           "tournament": "19402edECRMod2026V1",
           "match_id": "match3",
           "side": "axis",
           "result": "1:2",
           "gp_before": 1,
+          "delta": -5.333333333333333,
+          "rating_before": 1503.2,
+          "rating_after": 1497.8666666666668
+        }
+      ]
+    },
+    "sebastian jönsson": {
+      "rating": 1497.8666666666668,
+      "stats": {
+        "W": 2,
+        "L": 2,
+        "D": 0,
+        "GP": 4
+      },
+      "rating_history": [
+        {
+          "date": "2025-09-26",
+          "rating": 1516.0
+        },
+        {
+          "date": "2025-09-26",
+          "tournament": "19402edECRMod2025H2",
+          "match_id": "match2",
+          "side": "allies",
+          "result": "0:1",
+          "gp_before": 0,
+          "delta": 16.0,
+          "rating_before": 1500.0,
+          "rating_after": 1516.0
+        },
+        {
+          "date": "2025-09-27",
+          "rating": 1500.0
+        },
+        {
+          "date": "2025-09-27",
+          "tournament": "19402edECRMod2025H2",
+          "match_id": "match3",
+          "side": "axis",
+          "result": "0:1",
+          "gp_before": 1,
+          "delta": -16.0,
+          "rating_before": 1516.0,
+          "rating_after": 1500.0
+        },
+        {
+          "date": "2026-03-20",
+          "rating": 1503.2
+        },
+        {
+          "date": "2026-03-20",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match1",
+          "side": "axis",
+          "result": "3:2",
+          "gp_before": 2,
+          "delta": 3.1999999999999993,
+          "rating_before": 1500.0,
+          "rating_after": 1503.2
+        },
+        {
+          "date": "2026-03-21",
+          "rating": 1497.8666666666668
+        },
+        {
+          "date": "2026-03-21",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match3",
+          "side": "axis",
+          "result": "1:2",
+          "gp_before": 3,
           "delta": -5.333333333333333,
           "rating_before": 1503.2,
           "rating_after": 1497.8666666666668
@@ -399,11 +470,11 @@
       },
       "rating_history": [
         {
-          "date": "2025-03-20",
+          "date": "2026-03-20",
           "rating": 1503.2
         },
         {
-          "date": "2025-03-20",
+          "date": "2026-03-20",
           "tournament": "19402edECRMod2026V1",
           "match_id": "match1",
           "side": "axis",
@@ -414,11 +485,11 @@
           "rating_after": 1503.2
         },
         {
-          "date": "2025-03-21",
+          "date": "2026-03-21",
           "rating": 1497.8666666666668
         },
         {
-          "date": "2025-03-21",
+          "date": "2026-03-21",
           "tournament": "19402edECRMod2026V1",
           "match_id": "match3",
           "side": "axis",
@@ -427,82 +498,11 @@
           "delta": -5.333333333333333,
           "rating_before": 1503.2,
           "rating_after": 1497.8666666666668
-        }
-      ]
-    },
-    "sebastian jönsson": {
-      "rating": 1497.426231103919,
-      "stats": {
-        "W": 2,
-        "L": 2,
-        "D": 0,
-        "GP": 4
-      },
-      "rating_history": [
-        {
-          "date": "2025-03-20",
-          "rating": 1503.2
-        },
-        {
-          "date": "2025-03-20",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match1",
-          "side": "axis",
-          "result": "3:2",
-          "gp_before": 0,
-          "delta": 3.1999999999999993,
-          "rating_before": 1500.0,
-          "rating_after": 1503.2
-        },
-        {
-          "date": "2025-03-21",
-          "rating": 1497.8666666666668
-        },
-        {
-          "date": "2025-03-21",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match3",
-          "side": "axis",
-          "result": "1:2",
-          "gp_before": 1,
-          "delta": -5.333333333333333,
-          "rating_before": 1503.2,
-          "rating_after": 1497.8666666666668
-        },
-        {
-          "date": "2025-09-26",
-          "rating": 1513.9157883276505
-        },
-        {
-          "date": "2025-09-26",
-          "tournament": "19402edECRMod2025H2",
-          "match_id": "match2",
-          "side": "allies",
-          "result": "0:1",
-          "gp_before": 2,
-          "delta": 16.04912166098365,
-          "rating_before": 1497.8666666666668,
-          "rating_after": 1513.9157883276505
-        },
-        {
-          "date": "2025-09-27",
-          "rating": 1497.426231103919
-        },
-        {
-          "date": "2025-09-27",
-          "tournament": "19402edECRMod2025H2",
-          "match_id": "match3",
-          "side": "axis",
-          "result": "0:1",
-          "gp_before": 3,
-          "delta": -16.489557223731495,
-          "rating_before": 1513.9157883276505,
-          "rating_after": 1497.426231103919
         }
       ]
     },
     "pär olsson": {
-      "rating": 1476.7911142544694,
+      "rating": 1476.5333333333333,
       "stats": {
         "W": 2,
         "L": 2,
@@ -511,38 +511,8 @@
       },
       "rating_history": [
         {
-          "date": "2025-03-20",
-          "rating": 1503.2
-        },
-        {
-          "date": "2025-03-20",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match2",
-          "side": "axis",
-          "result": "3:2",
-          "gp_before": 0,
-          "delta": 3.1999999999999993,
-          "rating_before": 1500.0,
-          "rating_after": 1503.2
-        },
-        {
-          "date": "2025-03-21",
-          "rating": 1508.5333333333333
-        },
-        {
-          "date": "2025-03-21",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match3",
-          "side": "allies",
-          "result": "1:2",
-          "gp_before": 1,
-          "delta": 5.333333333333332,
-          "rating_before": 1503.2,
-          "rating_after": 1508.5333333333333
-        },
-        {
           "date": "2025-09-26",
-          "rating": 1492.38644958068
+          "rating": 1484.0
         },
         {
           "date": "2025-09-26",
@@ -550,14 +520,14 @@
           "match_id": "match1",
           "side": "axis",
           "result": "0:1",
-          "gp_before": 2,
-          "delta": -16.14688375265328,
-          "rating_before": 1508.5333333333333,
-          "rating_after": 1492.38644958068
+          "gp_before": 0,
+          "delta": -16.0,
+          "rating_before": 1500.0,
+          "rating_after": 1484.0
         },
         {
           "date": "2025-09-27",
-          "rating": 1476.7911142544694
+          "rating": 1468.0
         },
         {
           "date": "2025-09-27",
@@ -565,15 +535,45 @@
           "match_id": "match4",
           "side": "allies",
           "result": "1:0",
+          "gp_before": 1,
+          "delta": -16.0,
+          "rating_before": 1484.0,
+          "rating_after": 1468.0
+        },
+        {
+          "date": "2026-03-20",
+          "rating": 1471.2
+        },
+        {
+          "date": "2026-03-20",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match2",
+          "side": "axis",
+          "result": "3:2",
+          "gp_before": 2,
+          "delta": 3.1999999999999993,
+          "rating_before": 1468.0,
+          "rating_after": 1471.2
+        },
+        {
+          "date": "2026-03-21",
+          "rating": 1476.5333333333333
+        },
+        {
+          "date": "2026-03-21",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match3",
+          "side": "allies",
+          "result": "1:2",
           "gp_before": 3,
-          "delta": -15.595335326210483,
-          "rating_before": 1492.38644958068,
-          "rating_after": 1476.7911142544694
+          "delta": 5.333333333333332,
+          "rating_before": 1471.2,
+          "rating_after": 1476.5333333333333
         }
       ]
     },
     "andreas henriksson": {
-      "rating": 1468.9024783077418,
+      "rating": 1468.0,
       "stats": {
         "W": 0,
         "L": 2,
@@ -583,7 +583,7 @@
       "rating_history": [
         {
           "date": "2025-09-26",
-          "rating": 1484.1874779471427
+          "rating": 1484.0
         },
         {
           "date": "2025-09-26",
@@ -592,13 +592,13 @@
           "side": "axis",
           "result": "0:1",
           "gp_before": 0,
-          "delta": -15.812522052857183,
+          "delta": -16.0,
           "rating_before": 1500.0,
-          "rating_after": 1484.1874779471427
+          "rating_after": 1484.0
         },
         {
           "date": "2025-09-27",
-          "rating": 1468.9024783077418
+          "rating": 1468.0
         },
         {
           "date": "2025-09-27",
@@ -607,14 +607,14 @@
           "side": "allies",
           "result": "1:0",
           "gp_before": 1,
-          "delta": -15.284999639400874,
-          "rating_before": 1484.1874779471427,
-          "rating_after": 1468.9024783077418
+          "delta": -16.0,
+          "rating_before": 1484.0,
+          "rating_after": 1468.0
         }
       ]
     },
     "erik frilund": {
-      "rating": 1448.773688836503,
+      "rating": 1448.8,
       "stats": {
         "W": 0,
         "L": 4,
@@ -623,38 +623,8 @@
       },
       "rating_history": [
         {
-          "date": "2025-03-20",
-          "rating": 1496.8
-        },
-        {
-          "date": "2025-03-20",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match1",
-          "side": "allies",
-          "result": "3:2",
-          "gp_before": 0,
-          "delta": -3.1999999999999993,
-          "rating_before": 1500.0,
-          "rating_after": 1496.8
-        },
-        {
-          "date": "2025-03-21",
-          "rating": 1480.8
-        },
-        {
-          "date": "2025-03-21",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match4",
-          "side": "axis",
-          "result": "0:1",
-          "gp_before": 1,
-          "delta": -16.0,
-          "rating_before": 1496.8,
-          "rating_after": 1480.8
-        },
-        {
           "date": "2025-09-26",
-          "rating": 1464.5137988724316
+          "rating": 1484.0
         },
         {
           "date": "2025-09-26",
@@ -662,14 +632,14 @@
           "match_id": "match1",
           "side": "axis",
           "result": "0:1",
-          "gp_before": 2,
-          "delta": -16.286201127568336,
-          "rating_before": 1480.8,
-          "rating_after": 1464.5137988724316
+          "gp_before": 0,
+          "delta": -16.0,
+          "rating_before": 1500.0,
+          "rating_after": 1484.0
         },
         {
           "date": "2025-09-27",
-          "rating": 1448.773688836503
+          "rating": 1468.0
         },
         {
           "date": "2025-09-27",
@@ -677,10 +647,40 @@
           "match_id": "match4",
           "side": "allies",
           "result": "1:0",
+          "gp_before": 1,
+          "delta": -16.0,
+          "rating_before": 1484.0,
+          "rating_after": 1468.0
+        },
+        {
+          "date": "2026-03-20",
+          "rating": 1464.8
+        },
+        {
+          "date": "2026-03-20",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match1",
+          "side": "allies",
+          "result": "3:2",
+          "gp_before": 2,
+          "delta": -3.1999999999999993,
+          "rating_before": 1468.0,
+          "rating_after": 1464.8
+        },
+        {
+          "date": "2026-03-21",
+          "rating": 1448.8
+        },
+        {
+          "date": "2026-03-21",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match4",
+          "side": "axis",
+          "result": "0:1",
           "gp_before": 3,
-          "delta": -15.740110035928565,
-          "rating_before": 1464.5137988724316,
-          "rating_after": 1448.773688836503
+          "delta": -16.0,
+          "rating_before": 1464.8,
+          "rating_after": 1448.8
         }
       ]
     }
@@ -702,7 +702,187 @@
   "matches": [
     {
       "id": "match1",
-      "date": "2025-03-20",
+      "date": "2025-09-26",
+      "tournament": "19402edECRMod2025H2",
+      "axis": [
+        "andreas henriksson",
+        "erik frilund",
+        "pär olsson"
+      ],
+      "allies": [
+        "anders götsén",
+        "keyvan edrisi"
+      ],
+      "result": "0:1",
+      "parsed_score": {
+        "x": 0,
+        "y": 1,
+        "s_axis": 0.0,
+        "s_allies": 1.0
+      },
+      "axis_rating_before": 1500.0,
+      "allies_rating_before": 1500.0,
+      "expected_axis": 0.5,
+      "expected_allies": 0.5,
+      "axis_delta_per_player": -16.0,
+      "axis_player_deltas": {
+        "andreas henriksson": -16.0,
+        "erik frilund": -16.0,
+        "pär olsson": -16.0
+      },
+      "allies_player_deltas": {
+        "anders götsén": 16.0,
+        "keyvan edrisi": 16.0
+      },
+      "allies_delta_per_player": 16.0,
+      "surprise_axis": -0.5,
+      "surprise_allies": 0.5,
+      "n_axis": 3,
+      "n_allies": 2,
+      "dynamic_k": false,
+      "outcome": "allies_win",
+      "avg_k_axis": 32.0,
+      "avg_k_allies": 32.0,
+      "effective_axis_team_delta": -48.0,
+      "effective_allies_team_delta": 32.0
+    },
+    {
+      "id": "match2",
+      "date": "2025-09-26",
+      "tournament": "19402edECRMod2025H2",
+      "axis": [
+        "erik hardselius",
+        "mika sundberg"
+      ],
+      "allies": [
+        "johan hellberg",
+        "sebastian jönsson"
+      ],
+      "result": "0:1",
+      "parsed_score": {
+        "x": 0,
+        "y": 1,
+        "s_axis": 0.0,
+        "s_allies": 1.0
+      },
+      "axis_rating_before": 1500.0,
+      "allies_rating_before": 1500.0,
+      "expected_axis": 0.5,
+      "expected_allies": 0.5,
+      "axis_delta_per_player": -16.0,
+      "axis_player_deltas": {
+        "erik hardselius": -16.0,
+        "mika sundberg": -16.0
+      },
+      "allies_player_deltas": {
+        "johan hellberg": 16.0,
+        "sebastian jönsson": 16.0
+      },
+      "allies_delta_per_player": 16.0,
+      "surprise_axis": -0.5,
+      "surprise_allies": 0.5,
+      "n_axis": 2,
+      "n_allies": 2,
+      "dynamic_k": false,
+      "outcome": "allies_win",
+      "avg_k_axis": 32.0,
+      "avg_k_allies": 32.0,
+      "effective_axis_team_delta": -32.0,
+      "effective_allies_team_delta": 32.0
+    },
+    {
+      "id": "match3",
+      "date": "2025-09-27",
+      "tournament": "19402edECRMod2025H2",
+      "axis": [
+        "johan hellberg",
+        "sebastian jönsson"
+      ],
+      "allies": [
+        "anders götsén",
+        "keyvan edrisi"
+      ],
+      "result": "0:1",
+      "parsed_score": {
+        "x": 0,
+        "y": 1,
+        "s_axis": 0.0,
+        "s_allies": 1.0
+      },
+      "axis_rating_before": 1516.0,
+      "allies_rating_before": 1516.0,
+      "expected_axis": 0.5,
+      "expected_allies": 0.5,
+      "axis_delta_per_player": -16.0,
+      "axis_player_deltas": {
+        "johan hellberg": -16.0,
+        "sebastian jönsson": -16.0
+      },
+      "allies_player_deltas": {
+        "anders götsén": 16.0,
+        "keyvan edrisi": 16.0
+      },
+      "allies_delta_per_player": 16.0,
+      "surprise_axis": -0.5,
+      "surprise_allies": 0.5,
+      "n_axis": 2,
+      "n_allies": 2,
+      "dynamic_k": false,
+      "outcome": "allies_win",
+      "avg_k_axis": 32.0,
+      "avg_k_allies": 32.0,
+      "effective_axis_team_delta": -32.0,
+      "effective_allies_team_delta": 32.0
+    },
+    {
+      "id": "match4",
+      "date": "2025-09-27",
+      "tournament": "19402edECRMod2025H2",
+      "axis": [
+        "erik hardselius",
+        "mika sundberg"
+      ],
+      "allies": [
+        "andreas henriksson",
+        "erik frilund",
+        "pär olsson"
+      ],
+      "result": "1:0",
+      "parsed_score": {
+        "x": 1,
+        "y": 0,
+        "s_axis": 1.0,
+        "s_allies": 0.0
+      },
+      "axis_rating_before": 1484.0,
+      "allies_rating_before": 1484.0,
+      "expected_axis": 0.5,
+      "expected_allies": 0.5,
+      "axis_delta_per_player": 16.0,
+      "axis_player_deltas": {
+        "erik hardselius": 16.0,
+        "mika sundberg": 16.0
+      },
+      "allies_player_deltas": {
+        "andreas henriksson": -16.0,
+        "erik frilund": -16.0,
+        "pär olsson": -16.0
+      },
+      "allies_delta_per_player": -16.0,
+      "surprise_axis": 0.5,
+      "surprise_allies": -0.5,
+      "n_axis": 2,
+      "n_allies": 3,
+      "dynamic_k": false,
+      "outcome": "axis_win",
+      "avg_k_axis": 32.0,
+      "avg_k_allies": 32.0,
+      "effective_axis_team_delta": 32.0,
+      "effective_allies_team_delta": -48.0
+    },
+    {
+      "id": "match1",
+      "date": "2026-03-20",
       "tournament": "19402edECRMod2026V1",
       "axis": [
         "tomas nilsson",
@@ -748,7 +928,7 @@
     },
     {
       "id": "match2",
-      "date": "2025-03-20",
+      "date": "2026-03-20",
       "tournament": "19402edECRMod2026V1",
       "axis": [
         "anders götsén",
@@ -792,7 +972,7 @@
     },
     {
       "id": "match3",
-      "date": "2025-03-21",
+      "date": "2026-03-21",
       "tournament": "19402edECRMod2026V1",
       "axis": [
         "tomas nilsson",
@@ -838,7 +1018,7 @@
     },
     {
       "id": "match4",
-      "date": "2025-03-21",
+      "date": "2026-03-21",
       "tournament": "19402edECRMod2026V1",
       "axis": [
         "erik frilund",
@@ -879,186 +1059,6 @@
       "avg_k_allies": 32.0,
       "effective_axis_team_delta": -32.0,
       "effective_allies_team_delta": 32.0
-    },
-    {
-      "id": "match1",
-      "date": "2025-09-26",
-      "tournament": "19402edECRMod2025H2",
-      "axis": [
-        "andreas henriksson",
-        "erik frilund",
-        "pär olsson"
-      ],
-      "allies": [
-        "anders götsén",
-        "keyvan edrisi"
-      ],
-      "result": "0:1",
-      "parsed_score": {
-        "x": 0,
-        "y": 1,
-        "s_axis": 0.0,
-        "s_allies": 1.0
-      },
-      "axis_rating_before": 1496.4444444444446,
-      "allies_rating_before": 1494.6666666666665,
-      "expected_axis": 0.5025584055529042,
-      "expected_allies": 0.4974415944470958,
-      "axis_delta_per_player": -16.081868977692935,
-      "axis_player_deltas": {
-        "andreas henriksson": -15.812522052857183,
-        "erik frilund": -16.286201127568336,
-        "pär olsson": -16.14688375265328
-      },
-      "allies_player_deltas": {
-        "anders götsén": 16.081868977692938,
-        "keyvan edrisi": 16.081868977692928
-      },
-      "allies_delta_per_player": 16.081868977692935,
-      "surprise_axis": -0.5025584055529042,
-      "surprise_allies": 0.5025584055529042,
-      "n_axis": 3,
-      "n_allies": 2,
-      "dynamic_k": false,
-      "outcome": "allies_win",
-      "avg_k_axis": 32.0,
-      "avg_k_allies": 32.0,
-      "effective_axis_team_delta": -48.245606933078804,
-      "effective_allies_team_delta": 32.16373795538587
-    },
-    {
-      "id": "match2",
-      "date": "2025-09-26",
-      "tournament": "19402edECRMod2025H2",
-      "axis": [
-        "erik hardselius",
-        "mika sundberg"
-      ],
-      "allies": [
-        "johan hellberg",
-        "sebastian jönsson"
-      ],
-      "result": "0:1",
-      "parsed_score": {
-        "x": 0,
-        "y": 1,
-        "s_axis": 0.0,
-        "s_allies": 1.0
-      },
-      "axis_rating_before": 1506.4,
-      "allies_rating_before": 1505.3333333333335,
-      "expected_axis": 0.5015350519057389,
-      "expected_allies": 0.4984649480942611,
-      "axis_delta_per_player": -16.049121660983644,
-      "axis_player_deltas": {
-        "erik hardselius": -16.049121660983648,
-        "mika sundberg": -16.049121660983637
-      },
-      "allies_player_deltas": {
-        "johan hellberg": 16.04912166098364,
-        "sebastian jönsson": 16.04912166098365
-      },
-      "allies_delta_per_player": 16.049121660983644,
-      "surprise_axis": -0.5015350519057389,
-      "surprise_allies": 0.5015350519057389,
-      "n_axis": 2,
-      "n_allies": 2,
-      "dynamic_k": false,
-      "outcome": "allies_win",
-      "avg_k_axis": 32.0,
-      "avg_k_allies": 32.0,
-      "effective_axis_team_delta": -32.09824332196729,
-      "effective_allies_team_delta": 32.09824332196729
-    },
-    {
-      "id": "match3",
-      "date": "2025-09-27",
-      "tournament": "19402edECRMod2025H2",
-      "axis": [
-        "johan hellberg",
-        "sebastian jönsson"
-      ],
-      "allies": [
-        "anders götsén",
-        "keyvan edrisi"
-      ],
-      "result": "0:1",
-      "parsed_score": {
-        "x": 0,
-        "y": 1,
-        "s_axis": 0.0,
-        "s_allies": 1.0
-      },
-      "axis_rating_before": 1521.382454994317,
-      "allies_rating_before": 1510.7485356443594,
-      "expected_axis": 0.5152986632416093,
-      "expected_allies": 0.48470133675839067,
-      "axis_delta_per_player": -16.4895572237315,
-      "axis_player_deltas": {
-        "johan hellberg": -16.489557223731506,
-        "sebastian jönsson": -16.489557223731495
-      },
-      "allies_player_deltas": {
-        "anders götsén": 16.489557223731502,
-        "keyvan edrisi": 16.48955722373149
-      },
-      "allies_delta_per_player": 16.4895572237315,
-      "surprise_axis": -0.5152986632416093,
-      "surprise_allies": 0.5152986632416093,
-      "n_axis": 2,
-      "n_allies": 2,
-      "dynamic_k": false,
-      "outcome": "allies_win",
-      "avg_k_axis": 32.0,
-      "avg_k_allies": 32.0,
-      "effective_axis_team_delta": -32.979114447463004,
-      "effective_allies_team_delta": 32.97911444746299
-    },
-    {
-      "id": "match4",
-      "date": "2025-09-27",
-      "tournament": "19402edECRMod2025H2",
-      "axis": [
-        "erik hardselius",
-        "mika sundberg"
-      ],
-      "allies": [
-        "andreas henriksson",
-        "erik frilund",
-        "pär olsson"
-      ],
-      "result": "1:0",
-      "parsed_score": {
-        "x": 1,
-        "y": 0,
-        "s_axis": 1.0,
-        "s_allies": 0.0
-      },
-      "axis_rating_before": 1490.3508783390162,
-      "allies_rating_before": 1480.3625754667517,
-      "expected_axis": 0.5143703645672926,
-      "expected_allies": 0.48562963543270743,
-      "axis_delta_per_player": 15.540148333846638,
-      "axis_player_deltas": {
-        "erik hardselius": 15.54014833384663,
-        "mika sundberg": 15.540148333846641
-      },
-      "allies_player_deltas": {
-        "andreas henriksson": -15.284999639400874,
-        "erik frilund": -15.740110035928565,
-        "pär olsson": -15.595335326210483
-      },
-      "allies_delta_per_player": -15.540148333846638,
-      "surprise_axis": 0.48562963543270743,
-      "surprise_allies": -0.48562963543270743,
-      "n_axis": 2,
-      "n_allies": 3,
-      "dynamic_k": false,
-      "outcome": "axis_win",
-      "avg_k_axis": 32.0,
-      "avg_k_allies": 32.0,
-      "effective_axis_team_delta": 31.080296667693272,
-      "effective_allies_team_delta": -46.62044500153992
     }
   ]
 }
