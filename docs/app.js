@@ -158,6 +158,35 @@ function renderMatchList(name) {
     card.appendChild(el("div", "small", `Axis: ${(m.axis||[]).join(", ")}`));
     card.appendChild(el("div", "small", `Allies: ${(m.allies||[]).join(", ")}`));
     card.appendChild(el("div", "small", `Result: ${m.result} • Expected(Axis): ${fmt(m.expected_axis, 3)} • Surprise(Axis): ${fmt(m.surprise_axis, 3)}`));
+    if (m.note) {
+      card.appendChild(el("div", "small", `Note: ${m.note}`));
+    }
+    wrap.appendChild(card);
+  }
+}
+
+function renderAllMatches() {
+  const wrap = document.getElementById("allMatchList");
+  if (!wrap) return;
+  wrap.innerHTML = "";
+
+  const matches = (RUN.matches || [])
+    .slice()
+    .sort((a, b) => (b.date.localeCompare(a.date) || b.id.localeCompare(a.id)));
+
+  for (const m of matches) {
+    const card = el("div", "match");
+    const top = el("div", "top");
+    top.appendChild(el("div", "", `${m.date} • ${m.tournament || ""} • ${m.id}`));
+    top.appendChild(el("div", "", `Result ${m.result}`));
+    card.appendChild(top);
+
+    card.appendChild(el("div", "small", `Axis: ${(m.axis || []).join(", ")}`));
+    card.appendChild(el("div", "small", `Allies: ${(m.allies || []).join(", ")}`));
+    card.appendChild(el("div", "small", `Expected(Axis): ${fmt(m.expected_axis, 3)} • Surprise(Axis): ${fmt(m.surprise_axis, 3)}`));
+    if (m.note) {
+      card.appendChild(el("div", "small", `Note: ${m.note}`));
+    }
     wrap.appendChild(card);
   }
 }
@@ -244,6 +273,7 @@ async function main() {
   renderHeader();
   renderSideSummary();
   renderLeaderboard("");
+  renderAllMatches();
 
   renderPlayerSelect();
 

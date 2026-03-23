@@ -25,19 +25,23 @@
   - match1:
     - 2026-03-20
     - { axis: ["Tomas Nilsson", "Niclas Gustafsson", "Sebastian Jönsson"], allies: ["Erik Frilund", "Keyvan Edrisi"] }
-    - "3:2"
+    - "1:0"
+    - note: "Ended 3:2 after 8 Rounds."
 
   - match2:
     - 2026-03-20
     - { axis: ["Anders Götsén", "Pär Olsson"], allies: ["Johan Hellberg", "Mika Sundberg"] }
-    - "3:2"
+    - "1:0"
+    - note: "Ended 3:2 after 8 Rounds."
 
   - match3:
     - 2026-03-21
     - { axis: ["Tomas Nilsson", "Niclas Gustafsson", "Sebastian Jönsson"], allies: ["Anders Götsén", "Pär Olsson"] }
-    - "1:2"
+    - "0:1"
+    - note: "Adjusted game setup, g42setup24, for shorter duration, 6 Rounds. 1:2 after 6 Rounds, but last two rounds were hastened and Allies could potentially have taken more points."
     
   - match4:
     - 2026-03-21
     - { axis: ["Erik Frilund", "Keyvan Edrisi"], allies: ["Johan Hellberg", "Mika Sundberg"] }
     - "0:1"
+    - note: "Adjusted game setup, g42setup24, for shorter duration, 6 Rounds. 1:3 but ended prematurely."

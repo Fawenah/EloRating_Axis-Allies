@@ -250,6 +250,16 @@ def load_matches(path: str) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]
             m_date = parse_iso_date(entry_payload[0])
             teams_obj = entry_payload[1]
             result_str = entry_payload[2]
+            note_text = ""
+
+            # Optional metadata after [date, teams, result], e.g.:
+            # - note: "Ended 3:2 after 8 rounds"
+            if len(entry_payload) >= 4:
+                note_obj = entry_payload[3]
+                if isinstance(note_obj, dict) and "note" in note_obj:
+                    note_text = str(note_obj["note"])
+                elif isinstance(note_obj, str):
+                    note_text = note_obj
 
             if not isinstance(teams_obj, dict) or "axis" not in teams_obj or "allies" not in teams_obj:
                 raise ValueError(
@@ -266,6 +276,7 @@ def load_matches(path: str) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]
                     "axis": axis,
                     "allies": allies,
                     "result": str(result_str),
+                    "note": note_text,
                     "tournament": tournament_name,
                 }
             )
@@ -470,6 +481,7 @@ def compute_elo(
                 "id": m["id"],
                 "date": m["date"].isoformat(),
                 "tournament": m.get("tournament", ""),
+                "note": m.get("note", ""),
                 "axis": axis,
                 "allies": allies,
                 "result": m["result"],

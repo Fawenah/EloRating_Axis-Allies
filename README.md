@@ -105,6 +105,7 @@ python game_elo.py matches.yaml \
     - 2025-07-08
     - { axis: ["Player3"], allies: ["Player1"] }
     - "0:1"
+    - note: "Optional context shown in Recent matches; not used in Elo calculations."
 ```
 
 ### Match Components
