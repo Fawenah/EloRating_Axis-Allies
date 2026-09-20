@@ -124,6 +124,30 @@ body {
   gap: 16px;
 }
 
+.units-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.units-header-row h1 {
+  margin-bottom: 8px;
+}
+
+.units-header-row p {
+  margin-top: 0;
+}
+
+.ruleset-picker {
+  display: grid;
+  gap: 6px;
+  min-width: 240px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .objectives-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -346,10 +370,13 @@ body {
 
 .units-full {
   width: 100%;
+  min-width: 0;
 }
 
 .units-table-wrap,
 .combat-board-wrap {
+  width: 100%;
+  min-width: 0;
   overflow-x: auto;
 }
 
@@ -468,7 +495,7 @@ body {
 
 .combat-board-5x5 {
   width: 100%;
-  min-width: 920px;
+  min-width: 0;
   border-collapse: separate;
   border-spacing: 6px;
   table-layout: fixed;
@@ -690,6 +717,15 @@ body {
 }
 
 @media (max-width: 900px) {
+  .units-header-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .ruleset-picker {
+    min-width: 0;
+  }
+
   .unit-cards {
     grid-template-columns: 1fr;
   }

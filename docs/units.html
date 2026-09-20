@@ -14,8 +14,19 @@
       <a href="objectives.html">Objectives</a>
       <a href="research.html">Research</a>
     </nav>
-    <h1>Axis & Allies Unit Dashboard</h1>
-    <p class="muted">Quick unit reference, expandable unit rules, and combat value board.</p>
+    <div class="units-header-row">
+      <div>
+        <h1>Axis & Allies Unit Dashboard</h1>
+        <p class="muted">Quick unit reference, expandable unit rules, and combat value board.</p>
+      </div>
+      <label class="ruleset-picker" for="rulesetSelect">
+        <span>Ruleset</span>
+        <select id="rulesetSelect" class="select">
+          <option value="2026" selected>2026 tournament (D10)</option>
+          <option value="previous">Previous tournament (D6)</option>
+        </select>
+      </label>
+    </div>
   </header>
 
   <main class="container units-layout">
@@ -51,7 +62,7 @@
       <p class="muted">Units grouped by hit value using the Unit Statistics attack/defend values.</p>
       <div class="combat-board-wrap">
         <div class="combat-board-layout">
-          <div class="combat-side-info">
+          <div id="combatSideInfo" class="combat-side-info">
             <div class="combat-side-note">
               <div class="combat-side-note-text">
                 <img class="side-note-unit-image" src="images/navalMine.png" alt="Naval Mine" />
@@ -85,43 +96,7 @@
             </div>
           </div>
 
-          <table id="combatBoard" class="combat-board-5x5">
-            <tbody>
-              <tr>
-                <td class="attacker-row" colspan="5">Attacker</td>
-              </tr>
-              <tr class="units-row">
-                <td data-side="attack" data-value="0"></td>
-                <td data-side="attack" data-value="1"></td>
-                <td data-side="attack" data-value="2"></td>
-                <td data-side="attack" data-value="3"></td>
-                <td data-side="attack" data-value="4"></td>
-              </tr>
-              <tr class="values-row">
-                <td><div class="value-title">0</div></td>
-                <td><div class="value-title">1</div></td>
-                <td><div class="value-title">2</div></td>
-                <td><div class="value-title">3</div></td>
-                <td><div class="value-title">4</div></td>
-              </tr>
-              <tr class="units-row">
-                <td data-side="defend" data-value="0"></td>
-                <td data-side="defend" data-value="1"></td>
-                <td data-side="defend" data-value="2"></td>
-                <td data-side="defend" data-value="3"></td>
-                <td data-side="defend" data-value="4"></td>
-              </tr>
-              <tr>
-                <td class="casualty-row defender-zone" colspan="5">
-                  <div class="defender-zone-inner">
-                    <span class="left">Casualty Zone</span>
-                    <span class="center">Defender</span>
-                    <span class="right">Casualty Zone</span>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <table id="combatBoard" class="combat-board-5x5"><tbody></tbody></table>
         </div>
       </div>
     </section>
