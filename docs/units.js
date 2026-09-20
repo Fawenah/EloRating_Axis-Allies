@@ -281,7 +281,7 @@ const previousCombatBoard = {
       {
         combo: true,
         label: "Infantry + Artillery",
-        detail: "Infantry: Atk 2 (was 1)",
+        detail: "Infantry: Atk 2",
         units: [
           { image: "images/infantry.png", label: "Infantry" },
           { image: "images/artillery.png", label: "Artillery" }
@@ -290,7 +290,7 @@ const previousCombatBoard = {
       {
         combo: true,
         label: "Mechanized Infantry + Artillery",
-        detail: "Mech Inf: Atk 2 (was 1)",
+        detail: "Mech Inf: Atk 2",
         units: [
           { image: "images/mechanizedInfantry.png", label: "Mechanized Infantry" },
           { image: "images/artillery.png", label: "Artillery" }
@@ -311,7 +311,7 @@ const previousCombatBoard = {
       {
         combo: true,
         label: "Tactical Bomber + Tank",
-        detail: "Tac Bomber: Atk 4 (was 3)",
+        detail: "Tac Bomber: Atk 4",
         units: [
           { image: "images/tacticalBomber.png", label: "Tactical Bomber" },
           { image: "images/tank.png", label: "Tank", small: true }
@@ -320,7 +320,7 @@ const previousCombatBoard = {
       {
         combo: true,
         label: "Tactical Bomber + Fighter",
-        detail: "Tac Bomber: Atk 4 (was 3)",
+        detail: "Tac Bomber: Atk 4",
         units: [
           { image: "images/tacticalBomber.png", label: "Tactical Bomber" },
           { image: "images/fighter.png", label: "Fighter", small: true }
@@ -357,7 +357,7 @@ const previousCombatBoard = {
       {
         combo: true,
         label: "Cruiser + Battleship",
-        detail: "Cruiser: Def 4 (was 3)",
+        detail: "Cruiser: Def 4",
         units: [
           { image: "images/cruiser.png", label: "Cruiser" },
           { image: "images/battleship.png", label: "Battleship", small: true }
@@ -606,7 +606,6 @@ const combatBoard2026 = {
       {
         combo: true,
         label: "Mechanized Infantry + Artillery",
-        detail: "Mech Inf: Atk 3 (was 2)",
         units: [
           { image: "images/mechanizedInfantry.png", label: "Mechanized Infantry" },
           { image: "images/artillery.png", label: "Artillery" }
@@ -655,7 +654,7 @@ const combatBoard2026 = {
       {
         combo: true,
         label: "Infantry + Artillery or Tank",
-        detail: "Up to 2 Infantry: Def 3 (was 2)",
+        detail: "Up to 2 Infantry per",
         units: [
           { image: "images/infantry.png", label: "Infantry" },
           { image: "images/artillery.png", label: "Artillery" },
