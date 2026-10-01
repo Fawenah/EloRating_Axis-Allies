@@ -38,8 +38,8 @@ const previousQuickReferenceGroups = [
     upgrade: { unit: "Super Submarine", cost: "6/5", move: "2", attack: "3", defend: "1", capacity: "" }
   },
   {
-    base: { unit: "Transport", cost: "7/5", move: "2", attack: "0", defend: "0", capacity: "2/1+1" },
-    upgrade: { unit: "Improved Transport", cost: "7/5", move: "2", attack: "0", defend: "0", capacity: "2+1" }
+    base: { unit: "Transport", cost: "7/5", move: "2", attack: "0", defend: "0", capacity: "1+1" },
+    upgrade: { unit: "Improved Transport", cost: "7/5", move: "2", attack: "0", defend: "0", capacity: "1+2" }
   },
   { base: { unit: "Destroyer", cost: "8/7", move: "2", attack: "2", defend: "2", capacity: "" } },
   { base: { unit: "Cruiser", cost: "12/8", move: "2", attack: "3", defend: "3", capacity: "" } },
@@ -170,8 +170,8 @@ const previousUnitCards = [
   {
     title: "Transport / Improved Transport",
     image: "images/transport.png",
-    base: { name: "Transport", cost: "7/5", move: "2", attack: "0", defend: "0", capacity: "2/1+1" },
-    upgrade: { name: "Improved Transport", cost: "7/5", move: "2", attack: "0", defend: "0", capacity: "2+1" },
+    base: { name: "Transport", cost: "7/5", move: "2", attack: "0", defend: "0", capacity: "1+1" },
+    upgrade: { name: "Improved Transport", cost: "7/5", move: "2", attack: "0", defend: "0", capacity: "1+2" },
     rules: [
       "Improved Transport can carry any 2 ground units plus 1 Infantry."
     ]
@@ -382,7 +382,7 @@ const quickReferenceGroups2026 = [
   { base: { unit: "Mechanized Anti-Tank Gun", cost: "5", move: "2", attack: "3", defend: "5", capacity: "" } },
   {
     base: { unit: "Anti-Aircraft Artillery", cost: "3", move: "1", attack: "-", defend: "1", capacity: "" },
-    upgrade: { unit: "Anti-Aircraft Artillery with Radar", cost: "3", move: "1", attack: "-", defend: "2", capacity: "" }
+    upgrade: { unit: "Anti-Aircraft Artillery with Radar", cost: "3", move: "1", attack: "-", defend: "3", capacity: "" }
   },
   { base: { unit: "Truck", cost: "2", move: "2", attack: "-", defend: "-", capacity: "3" } },
   {
@@ -394,6 +394,7 @@ const quickReferenceGroups2026 = [
     base: { unit: "Strategic Bomber", cost: "10", move: "6/8", attack: "7", defend: "1", capacity: "2" },
     upgrade: { unit: "Heavy Bomber", cost: "10", move: "6/8", attack: "2x7", defend: "1", capacity: "2" }
   },
+  { base: { unit: "Reconnaissance Plane", cost: "5", move: "6/8", attack: "-", defend: "-", capacity: "-" } },
   {
     base: { unit: "Submarine", cost: "6/5", move: "2", attack: "4", defend: "2", capacity: "" },
     upgrade: { unit: "Super Submarine", cost: "6/5", move: "2", attack: "6", defend: "2", capacity: "" }
@@ -408,22 +409,22 @@ const quickReferenceGroups2026 = [
     upgrade: { unit: "Super Battleship", cost: "20/16", move: "2", attack: "2x7", defend: "7", capacity: "" }
   },
   {
-    base: { unit: "Transport", cost: "7/5", move: "2", attack: "-", defend: "-", capacity: "2/1+1" },
-    upgrade: { unit: "Improved Transport", cost: "7/5", move: "2", attack: "-", defend: "-", capacity: "2+1" }
+    base: { unit: "Transport", cost: "7/5", move: "2", attack: "-", defend: "-", capacity: "1+1" },
+    upgrade: { unit: "Improved Transport", cost: "7/5", move: "2", attack: "-", defend: "-", capacity: "1+2" }
   },
   { base: { unit: "Destroyer", cost: "8/7", move: "2", attack: "4", defend: "4", capacity: "" } },
   { base: { unit: "Naval Mine", cost: "2", move: "0", attack: "", defend: "2", capacity: "" } },
   {
     base: { unit: "Major Factory", cost: "30/20", move: "-", attack: "-", defend: "1", capacity: "" },
-    upgrade: { unit: "Major Factory with Radar", cost: "30/20", move: "-", attack: "-", defend: "2", capacity: "" }
+    upgrade: { unit: "Major Factory with Radar", cost: "30/20", move: "-", attack: "-", defend: "3", capacity: "" }
   },
   {
     base: { unit: "Minor Factory", cost: "12", move: "-", attack: "-", defend: "1", capacity: "" },
-    upgrade: { unit: "Minor Factory with Radar", cost: "12", move: "-", attack: "-", defend: "2", capacity: "" }
+    upgrade: { unit: "Minor Factory with Radar", cost: "12", move: "-", attack: "-", defend: "3", capacity: "" }
   },
   {
     base: { unit: "Air/Naval Base", cost: "15", move: "-", attack: "-", defend: "1", capacity: "" },
-    upgrade: { unit: "Air/Naval Base with Radar", cost: "15", move: "-", attack: "-", defend: "2", capacity: "" }
+    upgrade: { unit: "Air/Naval Base with Radar", cost: "15", move: "-", attack: "-", defend: "3", capacity: "" }
   }
 ];
 
@@ -485,8 +486,8 @@ const unitCards2026 = [
     image: "images/aaGun.png",
     imageUpgrade: "images/aaGunRadar.png",
     base: { name: "Anti-Aircraft Artillery", cost: "3", move: "1", attack: "-", defend: "1", capacity: "-" },
-    upgrade: { name: "Anti-Aircraft Artillery with Radar", cost: "3", move: "1", attack: "-", defend: "2", capacity: "-" },
-    rules: ["Radar technology increases anti-aircraft fire from 1 to 2."]
+    upgrade: { name: "Anti-Aircraft Artillery with Radar", cost: "3", move: "1", attack: "-", defend: "3", capacity: "-" },
+    rules: ["Radar technology increases anti-aircraft fire from 1 to 3."]
   },
   {
     title: "Truck",
@@ -526,6 +527,15 @@ const unitCards2026 = [
     ]
   },
   {
+    title: "Reconnaissance Plane",
+    image: "images/reconnaissancePlane.png",
+    base: { name: "Reconnaissance Plane", cost: "5", move: "6/8", attack: "-", defend: "-", capacity: "-" },
+    rules: [
+      "Scouts fog of war during the reconnaissance phase and relays information through the area where it is destroyed.",
+      "Draws one anti-aircraft shot in each territory with AA that it passes through."
+    ]
+  },
+  {
     title: "Submarine / Super Submarine",
     image: "images/submarine.png",
     imageUpgrade: "images/superSubmarine.png",
@@ -561,8 +571,8 @@ const unitCards2026 = [
   {
     title: "Transport / Improved Transport",
     image: "images/transport.png",
-    base: { name: "Transport", cost: "7/5", move: "2", attack: "-", defend: "-", capacity: "2/1+1" },
-    upgrade: { name: "Improved Transport", cost: "7/5", move: "2", attack: "-", defend: "-", capacity: "2+1" },
+    base: { name: "Transport", cost: "7/5", move: "2", attack: "-", defend: "-", capacity: "1+1" },
+    upgrade: { name: "Improved Transport", cost: "7/5", move: "2", attack: "-", defend: "-", capacity: "1+2" },
     rules: ["Improved Transport can carry any 2 ground units plus 1 Infantry."]
   },
   {
@@ -591,7 +601,8 @@ const unitCards2026 = [
 const combatBoard2026 = {
   attack: {
     0: [
-      { label: "Truck", image: "images/transport.png" },
+      { label: "Truck", image: "images/truck.png" },
+      { label: "Reconnaissance Plane", image: "images/reconnaissancePlane.png" },
       { label: "Transport / Improved Transport", image: "images/transport.png" }
     ],
     1: [{ label: "Aircraft Carrier / Super Aircraft Carrier", image: "images/aircraftCarrier.png" }],
@@ -633,7 +644,8 @@ const combatBoard2026 = {
   },
   defend: {
     0: [
-      { label: "Truck", image: "images/transport.png" },
+      { label: "Truck", image: "images/truck.png" },
+      { label: "Reconnaissance Plane", image: "images/reconnaissancePlane.png" },
       { label: "Transport / Improved Transport", image: "images/transport.png" }
     ],
     1: [

@@ -11,13 +11,14 @@
 | Anti-Tank Gun                       | 4     | 1    | 2      | 3      |          | Anti-Tank                  |
 | Mechanized Anti-Tank Gun            | 5     | 2    | 3      | 5      |          | Anti-Tank                  |
 | Anti-Aircraft Artillery             | 3     | 1    | -      | 1      |          | Anti-aircraft Artillery    |
-| Ainti-Aircraft Artillery with Radar | 3     | 1    | -      | 2      |          | Anti-aircraft Artillery    |
+| Ainti-Aircraft Artillery with Radar | 3     | 1    | -      | 3      |          | Anti-aircraft Artillery    |
 | Truck                               | 2     | 2    | -      | -      | 3        | Non-combat phase only      |
 | Fighter                             | 10    | 4/6  | 4      | 5      |          | Intercept 1                |
 | Jet Fighter                         | 10    | 4/6  | 6      | 5      |          | Intercept 2                |
 | Tactical Bomber                     | 10    | 4/6  | 5      | 3      |          | Targeted Attack            |
 | Strategic Bomber                    | 10    | 6/8  | 7      | 1      | 2        | Transport Plane            |
 | Heavy Bomber                        | 10    | 6/8  | 2x7    | 1      | 2        | Transport Plane            |
+| Reconnaissance Plane                | 5     | 6/8  | -      | -      | -        | Reconnaissance             |
 | Submarine                           | 6/5   | 2    | 4      | 2      |          |                            |
 | Super Submarine                     | 6/5   | 2    | 6      | 2      |          |                            |
 | Aircraft Carrier                    | 16/13 | 2    | 1      | 3      | 2        | Sustain 1                  |
@@ -30,11 +31,11 @@
 | Destroyer                           | 8/7   | 2    | 4      | 4      |          |                            |
 | Naval Mine                          | 2     | 0    |        | 2      |          | Resolve in Movement Phases |
 | Major Factory                       | 30/20 | -    | -      | 1      |          | Anti-aircraft Artillery    |
-| Major Factory with Radar            | 30/20 | -    | -      | 2      |          | Anti-aircraft Artillery    |
+| Major Factory with Radar            | 30/20 | -    | -      | 3      |          | Anti-aircraft Artillery    |
 | Minor Factory                       | 12    | -    | -      | 1      |          | Anti-aircraft Artillery    |
-| Minor Factory with Radar            | 12    | -    | -      | 2      |          | Anti-aircraft Artillery    |
+| Minor Factory with Radar            | 12    | -    | -      | 3      |          | Anti-aircraft Artillery    |
 | Air/Naval Base                      | 15    | -    | -      | 1      |          | Anti-aircraft Artillery    |
-| Air/Naval Base with Radar           | 15    | -    | -      | 2      |          | Anti-aircraft Artillery    |
+| Air/Naval Base with Radar           | 15    | -    | -      | 3      |          | Anti-aircraft Artillery    |
 
 ## Unit Upgrades
 
@@ -88,6 +89,10 @@ Move 2 spaces (3 from naval base); stop when entering hostile sea zone
 ## Submarines
 
 Can move through enemy ships (except destroyers); stop at enemy destroyer
+
+## Reconnaissance Plane
+
+Gets shot at once per territory with AA it passes through.
 
 # Unit Special Rules
 
@@ -148,6 +153,10 @@ Cruisers have a built in anti-aircraft gun, which can fire on up to 2 aircraft p
 ## Fighter Enhancement - Intercept
 
 Fighters gain the Intercept ability in all combats - with the capability of hitting other aircraft, not only when defending tactical/strategic bombing raids.
+
+## Reconnaissance Plane
+
+Scouts the FoW in the recon phase. Relays information up and including the area it is destroyed in.
 
 # Unit Combination Effects
 
