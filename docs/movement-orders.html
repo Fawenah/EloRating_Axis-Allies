@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Axis & Allies Movement Orders</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #111; background: #e4e7e9; font-family: "Trebuchet MS", sans-serif; }
+    .toolbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; max-width: 281mm; margin: 20px auto; padding: 0 12px; }
+    .toolbar a { color: #222; }
+    .toolbar button { font: inherit; font-weight: bold; padding: 8px 18px; border: 1px solid #222; border-radius: 4px; color: #fff; background: #222; cursor: pointer; }
+    .sheet-scroll { overflow-x: auto; padding: 0 12px 20px; }
+    .sheet { width: 281mm; height: 194mm; margin: 0 auto; padding: 0; background: #fff; }
+    .sheet + .sheet { margin-top: 20px; }
+    .sheet-header { height: 12mm; display: flex; align-items: center; justify-content: space-between; border-bottom: 0.6mm solid #111; }
+    h1 { margin: 0; font-size: 20pt; letter-spacing: 0; }
+    .game-name { font-size: 10pt; font-weight: bold; }
+    .metadata { height: 14mm; display: grid; grid-template-columns: 1.3fr 1.7fr 0.8fr 1.6fr 0.7fr; gap: 5mm; align-items: center; }
+    .field { display: flex; align-items: baseline; gap: 2mm; font-size: 9pt; font-weight: bold; white-space: nowrap; }
+    .blank { flex: 1; min-width: 0; height: 8mm; border-bottom: 0.3mm solid #333; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; border: 0.5mm solid #111; }
+    col.order { width: 6mm; }
+    col.zone { width: 32mm; }
+    th, td { border: 0.25mm solid #666; padding: 0; text-align: center; }
+    thead .groups { height: 7mm; font-size: 9pt; }
+    .groups th { border-bottom: 0.5mm solid #111; }
+    .unit-headings { height: 31mm; }
+    .unit-headings th { padding: 1mm 0.5mm; vertical-align: top; font-size: 7pt; line-height: 1.15; font-weight: normal; overflow-wrap: normal; }
+    .unit-headings img { display: block; width: 9mm; height: 10mm; margin: 0 auto 1.5mm; object-fit: contain; }
+    .unit-headings .route-label { vertical-align: middle; font-size: 12pt; font-weight: bold; }
+    tbody tr { height: 12mm; }
+    tbody th { font-size: 8pt; font-weight: normal; color: #444; }
+    tbody td { background: #fff; }
+    .groups th:nth-child(n+2), .unit-headings th:nth-child(4), .unit-headings th:nth-child(12), .unit-headings th:nth-child(16), tbody td:nth-child(4), tbody td:nth-child(12), tbody td:nth-child(16) { border-left: 0.6mm solid #111; }
+    .sheet-footer { height: 9mm; display: grid; grid-template-columns: 1fr 48mm; gap: 6mm; align-items: center; }
+    @page { size: A4 landscape; margin: 8mm; }
+    @media print {
+      html, body { width: 281mm; margin: 0; background: #fff; }
+      .toolbar { display: none; }
+      .sheet-scroll { overflow: visible; padding: 0; }
+      .sheet { margin: 0; break-inside: avoid; }
+      .sheet + .sheet { margin: 0; break-before: page; }
+      thead { display: table-header-group; }
+      tr { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="toolbar" aria-label="Movement sheet actions">
+    <a href="units.html">Back to unit dashboard</a>
+    <button type="button" onclick="window.print()">Print</button>
+  </nav>
+  <main class="sheet-scroll">
+    <article class="sheet" aria-labelledby="sheetTitle">
+      <header class="sheet-header">
+        <h1 id="sheetTitle">Movement Orders</h1>
+        <span class="game-name">AXIS &amp; ALLIES / FOG OF WAR</span>
+      </header>
+      <div class="metadata">
+        <div class="field">Team<span class="blank"></span></div>
+        <div class="field">Nation<span class="blank"></span></div>
+        <div class="field">Round<span class="blank"></span></div>
+        <div class="field">Phase<span class="blank"></span></div>
+        <div class="field">Sheet<span class="blank"></span></div>
+      </div>
+      <table aria-label="Ten movement orders with origin, destination, and unit quantities">
+        <colgroup><col class="order" /><col class="zone" /><col class="zone" /><col span="18" /></colgroup>
+        <thead>
+          <tr class="groups">
+            <th colspan="3" scope="colgroup">Route</th>
+            <th colspan="8" scope="colgroup">Land</th>
+            <th colspan="4" scope="colgroup">Air</th>
+            <th colspan="6" scope="colgroup">Sea</th>
+          </tr>
+          <tr class="unit-headings">
+            <th scope="col" class="route-label">#</th>
+            <th scope="col" class="route-label">From</th>
+            <th scope="col" class="route-label">To</th>
+            <th scope="col"><img src="images/infantry.png" alt="" />Infantry</th>
+            <th scope="col"><img src="images/artillery.png" alt="" />Artillery</th>
+            <th scope="col" aria-label="Mechanized Infantry"><img src="images/mechanizedInfantry.png" alt="" />Mech. Infantry</th>
+            <th scope="col"><img src="images/tank.png" alt="" />Tank</th>
+            <th scope="col"><img src="images/artillery.png" alt="" />Anti-Tank Gun</th>
+            <th scope="col" aria-label="Mechanized Anti-Tank Gun"><img src="images/mechanizedInfantry.png" alt="" />Mech. Anti-Tank Gun</th>
+            <th scope="col"><img src="images/aaGun.png" alt="" />AA Gun</th>
+            <th scope="col"><img src="images/truck.png" alt="" />Truck</th>
+            <th scope="col"><img src="images/fighter.png" alt="" />Fighter</th>
+            <th scope="col"><img src="images/tacticalBomber.png" alt="" />Tactical Bomber</th>
+            <th scope="col"><img src="images/strategicBomber.png" alt="" />Strategic Bomber</th>
+            <th scope="col" aria-label="Reconnaissance Plane"><img src="images/reconnaissancePlane.png" alt="" />Recon Plane</th>
+            <th scope="col"><img src="images/submarine.png" alt="" /><span style="font-size: 6.5pt">Submarine</span></th>
+            <th scope="col"><img src="images/transport.png" alt="" />Transport</th>
+            <th scope="col"><img src="images/destroyer.png" alt="" />Destroyer</th>
+            <th scope="col"><img src="images/cruiser.png" alt="" />Cruiser</th>
+            <th scope="col"><img src="images/aircraftCarrier.png" alt="" />Aircraft Carrier</th>
+            <th scope="col"><img src="images/battleship.png" alt="" />Battleship</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr><th scope="row">3</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th scope="row">4</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th scope="row">5</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th scope="row">6</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th scope="row">7</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th scope="row">8</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th scope="row">9</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th scope="row">10</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <footer class="sheet-footer">
+        <div class="field">Notes / route / landing<span class="blank"></span></div>
+        <div class="field">Judge<span class="blank"></span></div>
+      </footer>
+    </article>
+  </main>
+  <script>
+    const sheet = document.querySelector(".sheet");
+    const reverseSheet = sheet.cloneNode(true);
+    reverseSheet.querySelector("h1").id = "reverseSheetTitle";
+    reverseSheet.setAttribute("aria-labelledby", "reverseSheetTitle");
+    sheet.after(reverseSheet);
+  </script>
+</body>
+</html>
