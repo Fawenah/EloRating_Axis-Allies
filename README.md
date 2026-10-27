@@ -52,6 +52,14 @@ pip install pyyaml
 python game_elo.py matches.yaml
 ```
 
+#### Quick Use
+
+The one we run regularly.
+
+```bash
+python .\game_elo.py matches.yaml --distribution weighted --team-size-exponent 0 --web-out "docs/data/elo.json"
+```
+
 ### With Custom Parameters
 
 ```bash

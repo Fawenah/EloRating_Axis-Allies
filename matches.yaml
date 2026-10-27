@@ -45,3 +45,17 @@
     - { axis: ["Erik Frilund", "Keyvan Edrisi"], allies: ["Johan Hellberg", "Mika Sundberg"] }
     - "0:1"
     - note: "Adjusted game setup, g42setup24, for shorter duration, 6 Rounds. 1:3 but ended prematurely."
+
+- tournament:
+  - name: "19402edECRMod_d10_2026q4"
+  - match1:
+    - 2026-03-20
+    - { axis: ["Sebastian Jönsson", "Mika Sundberg"], allies: ["Anders Götsén", "Tomas Nilsson", "Keyvan Edrisi"] }
+    - "1:0"
+    - note: "FoW d10 match."
+
+  - match2:
+    - 2026-03-20
+    - { axis: ["Per-Ola Jönsson", "Sebastian Jönsson"], allies: ["Claes Jönsson", "Jacob Jönsson"] }
+    - "1:0"
+    - note: "g42setup24 d10 match."
