@@ -49,13 +49,13 @@
 - tournament:
   - name: "19402edECRMod_d10_2026q4"
   - match1:
-    - 2026-03-20
+    - 2026-10-11
     - { axis: ["Sebastian Jönsson", "Mika Sundberg"], allies: ["Anders Götsén", "Tomas Nilsson", "Keyvan Edrisi"] }
     - "1:0"
     - note: "FoW d10 match."
 
   - match2:
-    - 2026-03-20
+    - 2026-10-11
     - { axis: ["Per-Ola Jönsson", "Sebastian Jönsson"], allies: ["Claes Jönsson", "Jacob Jönsson"] }
     - "1:0"
     - note: "g42setup24 d10 match."
