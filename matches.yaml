@@ -57,5 +57,5 @@
   - match2:
     - 2026-10-11
     - { axis: ["Per-Ola Jönsson", "Sebastian Jönsson"], allies: ["Claes Jönsson", "Jacob Jönsson"] }
-    - "1:0"
+    - "0:1"
     - note: "g42setup24 d10 match."

@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": 1,
-    "generated_at": "2026-10-27T09:01:03Z",
+    "generated_at": "2026-10-27T10:01:25Z",
     "tournaments": [
       "19402edECRMod2025H2",
       "19402edECRMod2026V1",
@@ -110,107 +110,6 @@
         }
       ]
     },
-    "sebastian jönsson": {
-      "rating": 1532.590274651506,
-      "stats": {
-        "W": 4,
-        "L": 2,
-        "D": 0,
-        "GP": 6
-      },
-      "rating_history": [
-        {
-          "date": "2025-09-26",
-          "rating": 1516.0
-        },
-        {
-          "date": "2025-09-26",
-          "tournament": "19402edECRMod2025H2",
-          "match_id": "match2",
-          "side": "allies",
-          "result": "0:1",
-          "gp_before": 0,
-          "delta": 16.0,
-          "rating_before": 1500.0,
-          "rating_after": 1516.0
-        },
-        {
-          "date": "2025-09-27",
-          "rating": 1500.0
-        },
-        {
-          "date": "2025-09-27",
-          "tournament": "19402edECRMod2025H2",
-          "match_id": "match3",
-          "side": "axis",
-          "result": "0:1",
-          "gp_before": 1,
-          "delta": -16.0,
-          "rating_before": 1516.0,
-          "rating_after": 1500.0
-        },
-        {
-          "date": "2026-03-20",
-          "rating": 1516.0
-        },
-        {
-          "date": "2026-03-20",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match1",
-          "side": "axis",
-          "result": "1:0",
-          "gp_before": 2,
-          "delta": 16.0,
-          "rating_before": 1500.0,
-          "rating_after": 1516.0
-        },
-        {
-          "date": "2026-03-21",
-          "rating": 1500.0
-        },
-        {
-          "date": "2026-03-21",
-          "tournament": "19402edECRMod2026V1",
-          "match_id": "match3",
-          "side": "axis",
-          "result": "0:1",
-          "gp_before": 3,
-          "delta": -16.0,
-          "rating_before": 1516.0,
-          "rating_after": 1500.0
-        },
-        {
-          "date": "2026-10-11",
-          "rating": 1516.9812034923987
-        },
-        {
-          "date": "2026-10-11",
-          "tournament": "19402edECRMod_d10_2026q4",
-          "match_id": "match1",
-          "side": "axis",
-          "result": "1:0",
-          "gp_before": 4,
-          "delta": 16.981203492398677,
-          "rating_before": 1500.0,
-          "rating_after": 1516.9812034923987
-        },
-        {
-          "date": "2026-10-11",
-          "rating": 1532.590274651506
-        },
-        {
-          "date": "2026-10-11",
-          "tournament": "19402edECRMod_d10_2026q4",
-          "match_id": "match2",
-          "side": "axis",
-          "result": "1:0",
-          "gp_before": 5,
-          "delta": 15.609071159107351,
-          "rating_before": 1516.9812034923987,
-          "rating_after": 1532.590274651506
-        }
-      ]
-    },
     "mika sundberg": {
       "rating": 1516.9812034923987,
       "stats": {
@@ -297,8 +196,8 @@
         }
       ]
     },
-    "per-ola jönsson": {
-      "rating": 1515.6090711591073,
+    "claes jönsson": {
+      "rating": 1516.3909288408927,
       "stats": {
         "W": 1,
         "L": 0,
@@ -308,18 +207,145 @@
       "rating_history": [
         {
           "date": "2026-10-11",
-          "rating": 1515.6090711591073
+          "rating": 1516.3909288408927
+        },
+        {
+          "date": "2026-10-11",
+          "tournament": "19402edECRMod_d10_2026q4",
+          "match_id": "match2",
+          "side": "allies",
+          "result": "0:1",
+          "gp_before": 0,
+          "delta": 16.390928840892645,
+          "rating_before": 1500.0,
+          "rating_after": 1516.3909288408927
+        }
+      ]
+    },
+    "jacob jönsson": {
+      "rating": 1516.3909288408927,
+      "stats": {
+        "W": 1,
+        "L": 0,
+        "D": 0,
+        "GP": 1
+      },
+      "rating_history": [
+        {
+          "date": "2026-10-11",
+          "rating": 1516.3909288408927
+        },
+        {
+          "date": "2026-10-11",
+          "tournament": "19402edECRMod_d10_2026q4",
+          "match_id": "match2",
+          "side": "allies",
+          "result": "0:1",
+          "gp_before": 0,
+          "delta": 16.390928840892645,
+          "rating_before": 1500.0,
+          "rating_after": 1516.3909288408927
+        }
+      ]
+    },
+    "sebastian jönsson": {
+      "rating": 1500.590274651506,
+      "stats": {
+        "W": 3,
+        "L": 3,
+        "D": 0,
+        "GP": 6
+      },
+      "rating_history": [
+        {
+          "date": "2025-09-26",
+          "rating": 1516.0
+        },
+        {
+          "date": "2025-09-26",
+          "tournament": "19402edECRMod2025H2",
+          "match_id": "match2",
+          "side": "allies",
+          "result": "0:1",
+          "gp_before": 0,
+          "delta": 16.0,
+          "rating_before": 1500.0,
+          "rating_after": 1516.0
+        },
+        {
+          "date": "2025-09-27",
+          "rating": 1500.0
+        },
+        {
+          "date": "2025-09-27",
+          "tournament": "19402edECRMod2025H2",
+          "match_id": "match3",
+          "side": "axis",
+          "result": "0:1",
+          "gp_before": 1,
+          "delta": -16.0,
+          "rating_before": 1516.0,
+          "rating_after": 1500.0
+        },
+        {
+          "date": "2026-03-20",
+          "rating": 1516.0
+        },
+        {
+          "date": "2026-03-20",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match1",
+          "side": "axis",
+          "result": "1:0",
+          "gp_before": 2,
+          "delta": 16.0,
+          "rating_before": 1500.0,
+          "rating_after": 1516.0
+        },
+        {
+          "date": "2026-03-21",
+          "rating": 1500.0
+        },
+        {
+          "date": "2026-03-21",
+          "tournament": "19402edECRMod2026V1",
+          "match_id": "match3",
+          "side": "axis",
+          "result": "0:1",
+          "gp_before": 3,
+          "delta": -16.0,
+          "rating_before": 1516.0,
+          "rating_after": 1500.0
+        },
+        {
+          "date": "2026-10-11",
+          "rating": 1516.9812034923987
+        },
+        {
+          "date": "2026-10-11",
+          "tournament": "19402edECRMod_d10_2026q4",
+          "match_id": "match1",
+          "side": "axis",
+          "result": "1:0",
+          "gp_before": 4,
+          "delta": 16.981203492398677,
+          "rating_before": 1500.0,
+          "rating_after": 1516.9812034923987
+        },
+        {
+          "date": "2026-10-11",
+          "rating": 1500.590274651506
         },
         {
           "date": "2026-10-11",
           "tournament": "19402edECRMod_d10_2026q4",
           "match_id": "match2",
           "side": "axis",
-          "result": "1:0",
-          "gp_before": 0,
-          "delta": 15.609071159107362,
-          "rating_before": 1500.0,
-          "rating_after": 1515.6090711591073
+          "result": "0:1",
+          "gp_before": 5,
+          "delta": -16.39092884089264,
+          "rating_before": 1516.9812034923987,
+          "rating_after": 1500.590274651506
         }
       ]
     },
@@ -547,8 +573,8 @@
         }
       ]
     },
-    "claes jönsson": {
-      "rating": 1484.3909288408927,
+    "per-ola jönsson": {
+      "rating": 1483.6090711591073,
       "stats": {
         "W": 0,
         "L": 1,
@@ -558,44 +584,18 @@
       "rating_history": [
         {
           "date": "2026-10-11",
-          "rating": 1484.3909288408927
+          "rating": 1483.6090711591073
         },
         {
           "date": "2026-10-11",
           "tournament": "19402edECRMod_d10_2026q4",
           "match_id": "match2",
-          "side": "allies",
-          "result": "1:0",
+          "side": "axis",
+          "result": "0:1",
           "gp_before": 0,
-          "delta": -15.609071159107355,
+          "delta": -16.390928840892652,
           "rating_before": 1500.0,
-          "rating_after": 1484.3909288408927
-        }
-      ]
-    },
-    "jacob jönsson": {
-      "rating": 1484.3909288408927,
-      "stats": {
-        "W": 0,
-        "L": 1,
-        "D": 0,
-        "GP": 1
-      },
-      "rating_history": [
-        {
-          "date": "2026-10-11",
-          "rating": 1484.3909288408927
-        },
-        {
-          "date": "2026-10-11",
-          "tournament": "19402edECRMod_d10_2026q4",
-          "match_id": "match2",
-          "side": "allies",
-          "result": "1:0",
-          "gp_before": 0,
-          "delta": -15.609071159107355,
-          "rating_before": 1500.0,
-          "rating_after": 1484.3909288408927
+          "rating_after": 1483.6090711591073
         }
       ]
     },
@@ -856,14 +856,14 @@
   },
   "side_stats": {
     "axis": {
-      "W": 5,
-      "L": 5,
+      "W": 4,
+      "L": 6,
       "D": 0,
       "GP": 10
     },
     "allies": {
-      "W": 5,
-      "L": 5,
+      "W": 6,
+      "L": 4,
       "D": 0,
       "GP": 10
     }
@@ -1297,37 +1297,37 @@
         "claes jönsson",
         "jacob jönsson"
       ],
-      "result": "1:0",
+      "result": "0:1",
       "parsed_score": {
-        "x": 1,
-        "y": 0,
-        "s_axis": 1.0,
-        "s_allies": 0.0
+        "x": 0,
+        "y": 1,
+        "s_axis": 0.0,
+        "s_allies": 1.0
       },
       "axis_rating_before": 1508.4906017461994,
       "allies_rating_before": 1500.0,
       "expected_axis": 0.5122165262778952,
       "expected_allies": 0.48778347372210484,
-      "axis_delta_per_player": 15.609071159107355,
+      "axis_delta_per_player": -16.390928840892645,
       "axis_player_deltas": {
-        "per-ola jönsson": 15.609071159107362,
-        "sebastian jönsson": 15.609071159107351
+        "per-ola jönsson": -16.390928840892652,
+        "sebastian jönsson": -16.39092884089264
       },
       "allies_player_deltas": {
-        "claes jönsson": -15.609071159107355,
-        "jacob jönsson": -15.609071159107355
+        "claes jönsson": 16.390928840892645,
+        "jacob jönsson": 16.390928840892645
       },
-      "allies_delta_per_player": -15.609071159107355,
-      "surprise_axis": 0.48778347372210484,
-      "surprise_allies": -0.48778347372210484,
+      "allies_delta_per_player": 16.390928840892645,
+      "surprise_axis": -0.5122165262778952,
+      "surprise_allies": 0.5122165262778952,
       "n_axis": 2,
       "n_allies": 2,
       "dynamic_k": false,
-      "outcome": "axis_win",
+      "outcome": "allies_win",
       "avg_k_axis": 32.0,
       "avg_k_allies": 32.0,
-      "effective_axis_team_delta": 31.218142318214714,
-      "effective_allies_team_delta": -31.21814231821471
+      "effective_axis_team_delta": -32.7818576817853,
+      "effective_allies_team_delta": 32.78185768178529
     }
   ]
 }
